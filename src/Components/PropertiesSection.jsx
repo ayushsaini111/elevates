@@ -16,7 +16,7 @@ export default function PropertiesSection() {
           </h2>
 
           <h3 className="heading-h2 text-main uppercase">
-            <span className="heading-h3 text-primary-main">
+            <span className="heading-h3  text-primary-main">
               {propertiesSection.highlight}
             </span>
             {propertiesSection.headingBottom}

@@ -23,7 +23,7 @@ export const homePage = {
         location: "Kidwai Nagar, Kanpur, U P",
         type: "3BHK",
         area: "174240 sq.ft",
-        image: "/Images/home.jpg",
+        image: "/Images/home2.jpg",
 
       },
       {
@@ -33,7 +33,7 @@ export const homePage = {
         location: "Kidwai Nagar, Kanpur, U P",
         type: "3BHK",
         area: "174240 sq.ft",
-        image: "/Images/home.jpg",
+        image: "/Images/home3.jpg",
 
       },
       {
@@ -43,7 +43,7 @@ export const homePage = {
         location: "Kidwai Nagar, Kanpur, U P",
         type: "3BHK",
         area: "174240 sq.ft",
-        image: "/Images/home.jpg",
+        image: "/Images/home4.jpg",
 
       },
       {
@@ -53,7 +53,7 @@ export const homePage = {
         location: "Kidwai Nagar, Kanpur, U P",
         type: "3BHK",
         area: "174240 sq.ft",
-        image: "/Images/home.jpg",
+        image: "/Images/home5.jpg",
 
       },
       {
@@ -63,7 +63,7 @@ export const homePage = {
         location: "Kidwai Nagar, Kanpur, U P",
         type: "3BHK",
         area: "174240 sq.ft",
-        image: "/Images/home.jpg",
+        image: "/Images/home6.jpg",
 
       },
     ],
@@ -71,7 +71,8 @@ export const homePage = {
   },
 
   virtualTourSection: {
-    heading: "VIRTUAL TOUR",
+    heading1: "Watch Excellence ",
+    heading2:"Take Form",
     description:"Homes imagined, engineered, and brought to life crafted for moments that last forever.",
 
     tours: [
@@ -87,22 +88,23 @@ export const homePage = {
       },
       {
         id: 3,
-        video: "/Images/tour1.mp4",
-        thumbnail: "/Images/tour2.mp4",
+        video: "/Images/tour3.mp4",
+        thumbnail: "/Images/tour3.mp4",
       },
       {
         id: 4,
-        video: "/Images/tour2.mp4",
-        thumbnail: "/Images/tour2.mp4",
+        video: "/Images/tour4.mp4",
+        thumbnail: "/Images/tour4.mp4",
       },
       {
         id: 5,
-        video: "/Images/tour2.mp4",
-        thumbnail: "/Images/tour1.mp4",
+        video: "/Images/tour5.mp4",
+        thumbnail: "/Images/tour5.mp4",
       },
     ],
   }
-  , featuredProjectSection: {
+  , 
+  featuredProjectSection: {
     title: "Green Valley Residency",
     startingPrice: "₹48 Lakhs onwards",
 
@@ -124,7 +126,7 @@ export const homePage = {
     label: "Customer Feedback",
     heading: "WHAT BUYERS SAY",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+      "Real stories from clients who trusted us with their land, design, and construction journey.",
 
     stats: {
       number: "300+",
@@ -134,91 +136,91 @@ export const homePage = {
     testimonials: [
       {
         id: 1,
-        name: "Client Name",
-        role: "Client Name",
-        image: "/Images/client1.jpg",
+        name: "Rohan Mehta",
+        role: "Doctor",
+        image: "/Images/client.png",
         message:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+          " I was honestly worried about managing everything, but their team handled land, design, and construction smoothly. It felt organized from start to finish without unnecessary stress.",
       },
       {
         id: 2,
-        name: "Client Name",
-        role: "Client Name",
-        image: "/Images/client1.jpg",
+        name: "Priya Sharma",
+        role: "Professor",
+        image: "/Images/client.png",
         message:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+          " What I appreciated most was their patience. They listened to every small requirement and adjusted the architectural plan until it truly matched our lifestyle.",
       },
       {
         id: 3,
-        name: "Client Name",
-        role: "Client Name",
-        image: "/Images/client1.jpg",
+        name: "Ankit Verma",
+        role: "Actor",
+        image: "/Images/client.png",
         message:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "The construction quality speaks for itself. Even my relatives noticed how clean and well-managed the site was throughout the entire process.",
       },
       {
         id: 4,
-        name: "Client Name",
-        role: "Client Name",
-        image: "/Images/client1.jpg",
+        name: "⁠Neha Kapoor",
+        role: "Engineer",
+        image: "/Images/client.png",
         message:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "We didn’t want to deal with multiple contractors. Having one team manage everything made the experience much easier and more transparent.",
       },
       {
         id: 5,
-        name: "Client Name",
-        role: "Client Name",
-        image: "/Images/client1.jpg",
+        name: "⁠Sandeep Rao",
+        role: "Lawyer",
+        image: "/Images/client.png",
         message:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "Their interior suggestions were practical yet elegant. The final outcome feels comfortable and thoughtfully done, not overdesigned or excessive.",
       },
       {
         id: 6,
-        name: "Client Name",
-        role: "Client Name",
-        image: "/Images/client1.jpg",
+        name: "Kavya Nair",
+        role: "Officer",
+        image: "/Images/client.png",
         message:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "They kept us informed at every stage. There were no surprises, and that built a lot of trust during construction",
       },
     ],
   },
   faqs: [
     {
-      "question": "How fast can I get a consultation?",
-      "answer": "Usually the same day. For time-sensitive matters (police involvement, deadlines, property disputes, threats, financial fraud, etc.), we prioritise and try to arrange an urgent slot within hours."
+      "question": "Do you handle the entire process from land purchase to completed home?",
+      "answer": "Yes. We manage everything — from helping you secure the right plot to architectural planning, construction, and interior/exterior finishing. You don’t need to coordinate multiple vendors."
     },
     {
-      "question": "Will I need to visit an office or is everything online?",
-      "answer": "Almost everything — consultation, document review, drafting, clarifications — is handled online. In-person meetings are arranged only when specifically required."
+      "question": "Can I hire you only for architecture or construction separately?",
+      "answer": "Absolutely. While we offer complete end-to-end solutions, you can choose individual services such as architectural design, construction execution, or interior and exterior design based on your needs.."
     },
     {
-      "question": "Are my messages and documents kept confidential?",
-      "answer": "Yes. All information shared is confidential and used only for advising you on your matter."
+      "question": "Do you provide Vastu-compliant architectural planning?",
+      "answer": "Yes, we incorporate Vastu principles when requested, ensuring proper orientation, layout balance, and spatial harmony without compromising modern design and functionality."
     },
     {
-      "question": "Is there a minimum fee or can I consult only for one specific issue?",
-      "answer": "You can consult for even a single, small, or very specific issue — there is no minimum requirement.\n\nYou will receive an initial free consultation to understand your matter.\n\nIf the issue is complex or requires detailed review, drafting, or strategic work, we will inform you of the exact charges in advance, before any paid service begins."
+      "question": "How do you ensure construction quality?",
+      "answer": "We follow structured planning, supervised execution, and quality material standards at every stage. Regular site monitoring ensures structural strength and proper finishing."
     },
     {
-      "question": "If my matter requires a court lawyer, will you arrange one?",
-      "answer": "Yes. We advise you on the type of lawyer required and can recommend advocates from our network. You may choose our suggested lawyer or hire your own — we coordinate the strategy and drafting either way."
+      "question": "Will I get cost transparency before starting the project?",
+      "answer": "Yes. We provide clear estimates and structured cost breakdowns before beginning work, so you understand the investment involved at every stage."
     }
   ],
   ctaBannerSection: {
-  heading: ["LOREM IPSUM", "IS SIMPLY", "DUMMY TEXT"],
+  heading: ["Let’s Build", "Something That", "Truly Feels Yours"],
 
   description:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+    "From the first conversation to the final handover, we take care of every detail planning, construction, and finishing so your journey remains simple, clear, and rewarding.",
 
   sideText: [
-    "Lorem ipsum is simply dummy",
-    "Lorem Ipsum is simply dummy",
-    "Lorem Ipsum is simply dummy",
-    "Lorem Ipsum is simply dummy",
+    "Plots/Lands " ,
+"Architecture" ,
+"Construction ",
+"⁠Interior & Exterior"
   ],
 
   bottomText:
-    "Have an idea in mind or a project you want to start? We'd love to from you.",
+    "Whether you’re starting with a plot, a design idea,or a complete vision, our team is ready to bring it to life with care and precision.",
 
   buttonText: "Book A Visit",
 

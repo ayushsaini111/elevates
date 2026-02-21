@@ -25,9 +25,14 @@ export default function DesignSection() {
 
         {/* Content */}
         <div className="max-w-xl">
+          
+            <div>
+      <p className="text-left text-primary-main pl-s48">Architecture Designing</p>
           <h2 className="heading-h2 text-main mb-s24">
             {designSection.heading}
           </h2>
+
+    </div>
 
           <p className="body-default text-secondary">
             {designSection.description1}
@@ -80,14 +85,17 @@ export default function DesignSection() {
         {/* Center Content */}
         <div className="relative z-10 h-full flex flex-col items-center justify-center text-center max-w-2xl mx-auto px-s24">
 
+    <div>
+      <p className="text-left text-primary-main pl-s48">Architecture Designing</p>
           <h2 className="heading-h2 text-main mb-s24">
             {designSection.heading}
           </h2>
 
-          <p className="body-default text-secondary">
+    </div>
+          <p className="body-default text-secondary/80">
             {designSection.description1}
           </p>
-          <p className="body-default text-secondary mb-s32">
+          <p className="body-default text-secondary/80 mb-s32">
             {designSection.description2}
           </p>
 

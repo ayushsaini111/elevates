@@ -30,7 +30,7 @@ export default function CraftedSection() {
       ">
 
         <div className="">
-
+<p className="text-primary-main">Interior/Exterior Designing</p>
           {/* Heading */}
           <h1 className="
             heading-h2

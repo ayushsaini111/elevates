@@ -14,7 +14,7 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 
-const [navHeight, setNavHeight] = useState(64);
+const [navHeight, setNavHeight] = useState(50);
 const navBarRef = useRef(null);
 
 useEffect(() => {
@@ -54,7 +54,7 @@ useEffect(() => {
     <div className="flex items-center justify-center ">
 
     <nav className="fixed top-0 w-full z-50 ">
-      <div ref={navBarRef}  className="flex bg-primary-main items-center justify-between px-s16 md:px-s40 py-s8 md:py-s8">
+      <div ref={navBarRef}  className="flex bg-primary-main items-center justify-between px-s16 md:px-s40 py-s16 md:py-s8">
 
         {/* LEFT LOGO */}
         {/* LEFT LOGO */}
@@ -63,27 +63,12 @@ useEffect(() => {
   {/* logo2 first in mobile */}
   <div onClick={(e) => handleNavigation(e, "/")} className="lg:hidden   bg-primary-main  flex items-center justify-center  ">
     <Image
-      src="/logo2.png"
+      src="/logo3.svg"
       alt="Center Logo"
-      width={84}
+      width={155}
       height={94}
     />
   </div>
-
-  <Link
-    href="/"
-    onClick={(e) => handleNavigation(e, "/")}
-    className="lg:hidden absolute bottom-6 left-24 md:left-29"
-  >
-    <Image
-      src="/logo1.svg"
-      alt="Ayansh Logo"
-      width={90}
-      height={30}
-      className=""
-      priority
-    />
-  </Link>
 
   <Link
     href="/"

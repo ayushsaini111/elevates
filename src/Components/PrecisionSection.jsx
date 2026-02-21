@@ -27,6 +27,7 @@ export default function PrecisionSection() {
 
         {/* Content */}
         <div className="max-w-md sm:max-w-2xl">
+          
           <h2 className="heading-h2 text-main mb-s24 leading-tight">
             {precisionSection.heading.map((line, index) => (
               <span key={index} className="block">
@@ -70,8 +71,10 @@ export default function PrecisionSection() {
           w-[40%]
           max-w-xl
         ">
+            <p className="text-primary-main body-default">Construction Services</p>
 
           <h2 className="heading-h2 text-main mb-s16 lg:mb-s24 leading-tight">
+
             {precisionSection.heading.map((line, index) => (
               <span key={index} className="block">
                 {line}

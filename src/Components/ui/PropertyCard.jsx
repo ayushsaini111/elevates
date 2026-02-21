@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Button from "@/Components/ui/Button";
+import Link from "next/link";
 
 export default function PropertyCard({ property }) {
   return (
@@ -50,18 +51,22 @@ export default function PropertyCard({ property }) {
         {/* Actions */}
         <div className="flex items-center justify-between pt-s16">
 
-          <Button variant="secondary" className="px-s24 py-s8 rounded-full">
+          <Button variant="secondary" className="px-s24 py-s8 rounded-full" as="link" href={"/comingsoon"}>
             Call Agent
           </Button>
 
-          <button className="
-            text-primary-main
-            caption
-            transition-colors duration-200
-            hover:text-primary-light
-          ">
-            View Details →
-          </button>
+
+<Link  href="/comingsoon"
+  className="
+    text-primary-main
+    caption
+    transition-colors duration-200
+    hover:text-primary-light
+  "
+>
+  View Details →
+</Link>
+
 
         </div>
 

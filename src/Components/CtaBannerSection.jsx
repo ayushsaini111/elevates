@@ -37,8 +37,8 @@ export default function CtaBannerSection() {
             <div className="grid md:grid-cols-2 gap-s32">
 
               {/* LEFT TEXT */}
-              <div>
-                <h2 className="heading-h1 leading-tight mb-s24">
+              <div >
+                <h2 className="heading-h2  leading-tight mb-s24">
                   {ctaBannerSection.heading.map((line, index) => (
                     <span key={index} className="block">
                       {line}
@@ -46,7 +46,7 @@ export default function CtaBannerSection() {
                   ))}
                 </h2>
 
-                <p className="body-default opacity-90 max-w-md">
+                <p className="body-default opacity-90 max-w-xl">
                   {ctaBannerSection.description}
                 </p>
               </div>
@@ -75,7 +75,7 @@ export default function CtaBannerSection() {
             gap-s16
           ">
 
-            <p className="text-white body-default max-w-[200px]">
+            <p className="text-white body-default max-w-sm">
               {ctaBannerSection.bottomText}
             </p>
 

@@ -5,13 +5,13 @@ export const navLinks = [
     type: "link",
     title: "Ayansh",
     subtitle: "Civil Solutions",
-    href: "/civil",
+    href: "/comingsoon",
   },
   {
     type: "link",
     title: "Ayansh",
     subtitle: "Builders & Developer",
-    href: "/builders",
+    href: "/comingsoon",
   },
   {
     type: "logo",
@@ -20,13 +20,13 @@ export const navLinks = [
     type: "link",
     title: "Ayansh",
     subtitle: "Infra Build",
-    href: "/infra",
+    href: "/comingsoon",
   },
   {
     type: "link",
     title: "Ayansh",
     subtitle: "Group",
-    href: "/group",
+    href: "/comingsoon",
   },
 ];
 

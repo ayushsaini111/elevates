@@ -21,7 +21,10 @@ export default function VirtualTourSection() {
       {/* Constrained Heading */}
       <div className="max-w-7xl mx-auto">
         <h2 className="heading-h2 text-main  ">
-          {virtualTourSection.heading}
+          {virtualTourSection.heading1}
+        </h2>
+        <h2 className="heading-h2 text-main  ">
+          {virtualTourSection.heading2}
         </h2>
       <div className="body-default text-secondary mb-s48">{virtualTourSection.description}</div>
       </div>

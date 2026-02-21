@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <section className="relative w-full overflow-hidden pt-[50px] md:pt-[85px]">
+    <section className="relative w-full overflow-hidden pt-[40px] md:pt-[85px]">
 
       {/* Video Wrapper */}
       <div className="relative w-full h-[calc(100vh-80px)] ">
@@ -23,7 +23,7 @@ export default function Hero() {
         {/* Content Example */}
         <div className="relative z-10 flex items-center mx-auto max-w-lg md:max-w-5xl justify-center h-full text-center px-s24">
           <h1 className="heading-h1 text-background">
-            Elevating Infrastructure
+            A Peaceful Journey from Land <span className="heading-h3 underline pb-2">to</span> Home
           </h1>
         </div>
 

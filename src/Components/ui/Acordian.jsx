@@ -42,7 +42,7 @@ export default function Accordion({
           ${isOpen ? "max-h-[300px] py-s8" : "max-h-0 py-0"}
         `}
       >
-        <p className="body-default text-secondary leading-relaxed">
+        <p className="body-default max-w-5xl text-secondary leading-relaxed">
           {answer}
         </p>
       </div>

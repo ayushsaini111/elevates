@@ -12,6 +12,7 @@ import DesignSection from "@/Components/DesignSection";
 import CraftedSection from "@/Components/CraftedSection";
 import PrecisionSection from "@/Components/PrecisionSection";
 import TradingRules from "@/Components/TradingRules";
+import Footer from "@/Components/Footer";
 const {faqs}=homePage
 export default function Home() {
   return (
@@ -19,15 +20,16 @@ export default function Home() {
     <Hero/>
     <PropertiesSection/>
     <VirtualTourSection/>
+    <VisionSection/>
+    <TradingRules/>
     <FeaturedProjectSection/>
+    <DesignSection/>
+    <PrecisionSection/>
+    <CraftedSection/>
     <CustomerFeedbackSection/>
     <FaqSection faqs={faqs}/>
     <CtaBannerSection/>
-    <VisionSection/>
-    <DesignSection/>
-    <PrecisionSection/>
-    <TradingRules/>
-    <CraftedSection/>
+    <Footer/>
    </div>
   );
 }

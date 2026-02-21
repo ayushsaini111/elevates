@@ -20,7 +20,7 @@ export default function CustomerFeedbackSection() {
     <section className="pl-s24 pl-s32 md:pl-s64  xl:px-0 py-s104 md:py-s160 overflow-hidden">
 
       {/* HEADER ROW */}
-      <div className="max-w-7xl mx-auto  flex justify-between items-start">
+      <div className="max-w-7xl mx-auto  flex justify-between items-start pr-s24">
 
         <div className="max-w-xl">
           <p className="text-primary-main body-default mb-s24">

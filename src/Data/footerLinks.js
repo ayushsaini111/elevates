@@ -1,39 +1,25 @@
-export const footerLinks = {
-  pages: [
-    { label: "Home", path: "/" },
-    { label: "About", path: "/about" },
-    { label: "Daily Trades", path: "/dailyTrades" },
+export const footerData = {
+  services: [
+    { name: "Ayansh Elevating Lives", href: "#" },
+    { name: "Ayansh Civil Solutions", href: "#" },
+    { name: "Ayansh Builders & Developer", href: "#" },
+    { name: "Ayansh Infra Build", href: "#" },
   ],
 
-  socialMedia: [
-    {
-      label: "youtube",
-      path: "/",
-      icon: "./Social/youtube.png", // not displayed yet
-    },
-    {
-      label: "linkedin",
-      path: "/",
-      icon: "./Social/linkedin.png",
-    },
-    {
-      label: "instagram",
-      path: "/",
-      icon: "./Social/instagram.png",
-    },
-    {
-      label: "facebook",
-      path: "/",
-      icon: "./Social/Facebook.png",
-    },
+  company: [
+    { name: "Home", href: "/" },
+    { name: "Available Properties", href: "/properties" },
+    { name: "About", href: "/about" },
   ],
 
-  bottom: {
-    copyright: "© 2026 Divyansh Mishra. All rights reserved.",
-    privacy: {
-      label: "Privacy Policy",
-      path: "/privacy-policy",
-    },
-    credit: "Design & Developed by Oryvia",
+  social: [
+    { name: "Instagram", href: "#" },
+    { name: "Youtube", href: "#" },
+    { name: "Facebook", href: "#" },
+  ],
+
+  contact: {
+    address:
+      "H/1/37, Krishna Puram, Kanpur Cantonment, Kanpur, Uttar Pradesh 208007",
   },
 }

@@ -12,31 +12,38 @@ function TradingRules() {
   const pathRef = useRef(null)
   const endRef = useRef(null)
 
-  useEffect(() => {
-    const path = pathRef.current
-    const length = path.getTotalLength()
+useEffect(() => {
+  if (!pathRef.current) return
 
-    // Initial hidden stroke
-    gsap.set(path, {
-      strokeDasharray: length,
-      strokeDashoffset: length,
-    })
+  const path = pathRef.current
+  const length = path.getTotalLength()
 
-    gsap.to(path, {
-      strokeDashoffset: 0,
-      ease: "none",
-      scrollTrigger: {
-        trigger: path,
-        start: "top 80%",
-        endTrigger: endRef.current,
-        end: "top center",
-        scrub: true,
-      },
-    })
-  }, [])
+  gsap.set(path, {
+    strokeDasharray: length,
+    strokeDashoffset: length,
+  })
+
+  const animation = gsap.to(path, {
+    strokeDashoffset: 0,
+    ease: "none",
+    scrollTrigger: {
+      trigger: path,
+      start: "top center",
+      end: "bottom 90%",
+      scrub: true,
+    },
+  })
+
+  ScrollTrigger.refresh()
+
+  return () => {
+    animation.scrollTrigger?.kill()
+    animation.kill()
+  }
+}, [])
 
   return (
-    <section className="overflow-hidden  md:pt-s160  lg:px-0 ">
+    <section className="overflow-hidden   lg:px-0 ">
 
       {/* Heading */}
       <div className=" max-w-7xl mx-auto text-center px-s32 text-cente heading-h2 mb-s80 sm:mb-[200px]">
