@@ -27,7 +27,7 @@ export default function DesignSection() {
         <div className="max-w-xl">
           
             <div>
-      <p className="text-left text-primary-main pl-s48">Architecture Designing</p>
+      <p className="text-left text-primary-main pl-s24">Architecture Designing</p>
           <h2 className="heading-h2 text-main mb-s24">
             {designSection.heading}
           </h2>
@@ -41,7 +41,7 @@ export default function DesignSection() {
             {designSection.description2}
           </p>
 
-          <Button variant="secondary">
+          <Button variant="secondary"  as="link" href={"/comingsoon"}>
             {designSection.buttonText}
           </Button>
         </div>
@@ -99,7 +99,7 @@ export default function DesignSection() {
             {designSection.description2}
           </p>
 
-          <Button variant="secondary">
+          <Button  as="link" href={"/comingsoon"}variant="secondary">
             {designSection.buttonText}
           </Button>
 

@@ -36,11 +36,11 @@ export default function PrecisionSection() {
             ))}
           </h2>
 
-          <p className="body-default text-main mb-s32">
+          <p className="body-default text-secondary mb-s32">
             {precisionSection.description}
           </p>
 
-          <Button variant="secondary">
+          <Button variant="secondary"  as="link" href={"/comingsoon"}>
             {precisionSection.buttonText}
           </Button>
         </div>
@@ -57,7 +57,7 @@ export default function PrecisionSection() {
             alt="Construction Crane"
             width={1600}
             height={1600}
-            className="w-full h-auto   object-contain scale-x-[-1]"
+            className="w-full h-auto   object-contain scale-x-[-1] scale-y-120 translate-y-15 "
             priority
           />
         </div>
@@ -66,7 +66,7 @@ export default function PrecisionSection() {
         <div className="
           absolute
           right-10
-          top-100 2xl:top-1/2
+          top-113 2xl:top-1/2
           -translate-y-1/2
           w-[40%]
           max-w-xl
@@ -82,11 +82,11 @@ export default function PrecisionSection() {
             ))}
           </h2>
 
-          <p className="body-default max-w-xs  text-main mb-s16 lg:mb-s32">
+          <p className="body-default max-w-xs text-secondary  text-main mb-s16 lg:mb-s32">
             {precisionSection.description}
           </p>
 
-          <Button variant="secondary">
+          <Button variant="secondary"  as="link" href={"/comingsoon"}>
             {precisionSection.buttonText}
           </Button>
 

@@ -16,10 +16,10 @@ export default function VirtualTourSection() {
   };
 
   return (
-    <section className=" pl-s32 md:pl-s64  xl:px-0 py-s104 md:py-s160 bg-secondary-light">
+    <section className=" pl-s32 md:pl-s64  xl:px-0 py-s160 bg-secondary-light">
 
       {/* Constrained Heading */}
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto pr-s24">
         <h2 className="heading-h2 text-main  ">
           {virtualTourSection.heading1}
         </h2>

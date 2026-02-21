@@ -84,10 +84,15 @@ export default function FeaturedProjectSection() {
             </div>
 
             <div className="flex justify-end gap-s16">
-              <button className="text-primary-main font-medium">
+              <a
+                href="/Images/mapd.jpg"
+                download
+                className="text-primary-main font-medium"
+              >
                 Download Brochure
-              </button>
-              <Button>Schedule Visit</Button>
+              </a>
+
+              <Button as="link" href={"/comingsoon"}>Schedule Visit</Button>
             </div>
           </div>
 

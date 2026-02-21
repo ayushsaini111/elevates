@@ -1,6 +1,6 @@
 export const footerData = {
   services: [
-    { name: "Ayansh Elevating Lives", href: "#" },
+    { name: "Ayansh Elevating Lives", href: "/" },
     { name: "Ayansh Civil Solutions", href: "#" },
     { name: "Ayansh Builders & Developer", href: "#" },
     { name: "Ayansh Infra Build", href: "#" },
@@ -8,14 +8,14 @@ export const footerData = {
 
   company: [
     { name: "Home", href: "/" },
-    { name: "Available Properties", href: "/properties" },
-    { name: "About", href: "/about" },
+    { name: "Available Properties", href: "/comingsoon" },
+    { name: "About", href: "/comingsoon" },
   ],
 
   social: [
-    { name: "Instagram", href: "#" },
-    { name: "Youtube", href: "#" },
-    { name: "Facebook", href: "#" },
+    { name: "Instagram", href: "https://www.facebook.com/profile.php?id=61586868854868 " },
+    { name: "Youtube", href: "https://www.facebook.com/profile.php?id=61586868854868 " },
+    { name: "Facebook", href: "https://www.facebook.com/profile.php?id=61586868854868 " },
   ],
 
   contact: {

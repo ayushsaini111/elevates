@@ -46,12 +46,12 @@ export default function CraftedSection() {
           </h1>
 
           {/* Description */}
-          <p className="body-default max-w-sm mb-s24 md:mb-s32">
+          <p className="body-default text-secondary max-w-sm mb-s24 md:mb-s32">
             {craftedSection.description}
           </p>
 
           {/* Button */}
-          <Button variant="secondary">
+          <Button variant="secondary"  as="link" href={"/comingsoon"}>
             {craftedSection.buttonText}
           </Button>
 

@@ -49,7 +49,7 @@ useEffect(() => {
       <div className=" max-w-7xl mx-auto text-center px-s32 text-cente heading-h2 mb-s80 sm:mb-[200px]">
         <p>From Land Purchase</p>
 <p>to Final Home Seamlessly Delivered</p>
-<p><span className="underline">by</span> <span>One Group</span></p>
+<p><span className="underline heading-h3">by</span> <span>One Group</span></p>
       </div>
 
       {/* Blob Container */}

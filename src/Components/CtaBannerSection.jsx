@@ -8,7 +8,7 @@ export default function CtaBannerSection() {
   const { ctaBannerSection } = homePage;
 
   return (
-    <section className="py-s80 px-s32 md:px-s64  xl:px-0 md:py-s160 ">
+    <section className="py-s80 px-s24 md:px-s64  xl:px-0 md:py-s160 ">
 
       <div className="max-w-7xl mx-auto ">
 
@@ -29,7 +29,7 @@ export default function CtaBannerSection() {
           />
 
           {/* Dark Overlay */}
-          <div className="absolute inset-0 bg-black/30" />
+          <div className="absolute inset-0 bg-black/50" />
 
           {/* Content */}
           <div className="relative z-10 p-s40 text-white">
@@ -38,7 +38,7 @@ export default function CtaBannerSection() {
 
               {/* LEFT TEXT */}
               <div >
-                <h2 className="heading-h2  leading-tight mb-s24">
+                <h2 className="text-4xl font-secondary md:text-5xl font-medium leading-tight mb-s24">
                   {ctaBannerSection.heading.map((line, index) => (
                     <span key={index} className="block">
                       {line}
@@ -79,7 +79,7 @@ export default function CtaBannerSection() {
               {ctaBannerSection.bottomText}
             </p>
 
-            <Button variant="secondary" >
+            <Button variant="secondary"  as="link" href={"/comingsoon"} >
               {ctaBannerSection.buttonText}
             </Button>
 

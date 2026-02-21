@@ -154,7 +154,7 @@ useEffect(() => {
 
           {/* Desktop Button */}
           <div className="hidden lg:block">
-            <Button children="Book a visit"/>
+            <Button  as="link" href={"/comingsoon"} children="Book a visit"/>
             
           </div>
 
@@ -208,7 +208,7 @@ useEffect(() => {
       ))}
 
     <div className="mt-auto pt-s32">
-      <Button children="Book a visit" />
+      <Button  as="link" href={"/comingsoon"} children="Book a visit" />
     </div>
 
   </div>

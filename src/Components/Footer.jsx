@@ -28,7 +28,7 @@ export default function Footer() {
             <ul className="space-y-2 body-default text-gray-200">
               {footerData.services.map((item, index) => (
                 <li key={index}>
-                  <Link href={item.href} className="hover:text-white transition">
+                  <Link href={item.href} target="_blank" className="hover:text-white transition">
                     {item.name}
                   </Link>
                 </li>
@@ -42,7 +42,7 @@ export default function Footer() {
             <ul className="space-y-2 body-default text-gray-200">
               {footerData.company.map((item, index) => (
                 <li key={index}>
-                  <Link href={item.href} className="hover:text-white transition">
+                  <Link href={item.href} target="_blank" className="hover:text-white transition">
                     {item.name}
                   </Link>
                 </li>
@@ -56,7 +56,7 @@ export default function Footer() {
             <ul className="space-y-2 body-default text-gray-200">
               {footerData.social.map((item, index) => (
                 <li key={index}>
-                  <Link href={item.href} className="hover:text-white transition">
+                  <Link href={item.href} target="_blank" className="hover:text-white transition">
                     {item.name}
                   </Link>
                 </li>
@@ -81,10 +81,10 @@ export default function Footer() {
           <p>© 2026 Ayansh Elevating Lives. All rights reserved.</p>
 
           <div className="flex gap-6">
-            <Link href="#" className="hover:text-white transition">
+            <Link href="/comingsoon" className="hover:text-white transition">
               Privacy Policy
             </Link>
-            <Link href="#" className="hover:text-white transition">
+            <Link href="/comingsoon" className="hover:text-white transition">
               Terms & Condition
             </Link>
           </div>
