@@ -17,11 +17,13 @@ const {faqs}=homePage
 export default function Home() {
   return (
    <div>
+    <p className="heading-h1">
+    </p>
     <Hero/>
     <PropertiesSection/>
     <VirtualTourSection/>
     <VisionSection/>
-    <TradingRules/>
+    {/* <TradingRules/> */}
     <FeaturedProjectSection/>
     <DesignSection/>
     <PrecisionSection/>
@@ -29,7 +31,7 @@ export default function Home() {
     <CustomerFeedbackSection/>
     <FaqSection faqs={faqs}/>
     <CtaBannerSection/>
-    <Footer/>
+    <Footer image={"/Images/footer.svg"}/>
    </div>
   );
 }

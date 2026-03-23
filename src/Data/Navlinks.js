@@ -1,34 +1,27 @@
 // src/Data/Navlinks.js
 
-export const navLinks = [
+export const navItems =[
   {
-    type: "link",
-    title: "Ayansh",
-    subtitle: "Civil Solutions",
-    href: "/comingsoon",
+    name: "Ayansh Elevating Lives",
+    href: "/",
+    theme: "theme-elevating",
   },
   {
-    type: "link",
-    title: "Ayansh",
-    subtitle: "Builders & Developer",
-    href: "/comingsoon",
+    name: "Ayansh Infra Build",
+    href: "/infra",
+    theme: "theme-infra",
   },
   {
-    type: "logo",
+    name: "Ayansh Builders & Developer",
+    href: "/builders",
+    theme: "theme-builders",
   },
   {
-    type: "link",
-    title: "Ayansh",
-    subtitle: "Infra Build",
-    href: "/comingsoon",
-  },
-  {
-    type: "link",
-    title: "Ayansh",
-    subtitle: "Group",
-    href: "/comingsoon",
+    name: "Ayansh Civil Solutions",
+    href: "/civil",
+    theme: "theme-civil",
   },
 ];
 
 
-export { navLinks };
+export { navItems };

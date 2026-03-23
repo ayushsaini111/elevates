@@ -26,7 +26,7 @@ export default function VisionSection() {
 
         {/* Heading */}
    <div>
-         <h1 className="heading-h3 text-main leading-tight mb-s32 md:mb-s104">
+         <h1 className="heading-h3  text-main leading-tight mb-s32 md:mb-s104">
           {visionSection.heading.map((line, index) => (
             <span key={index} className="block">
               {line}
@@ -64,7 +64,7 @@ export default function VisionSection() {
                 </span>
               </div>
 
-              <p className="body-default text-secondary">
+              <p className="body-default  text-secondary">
                 {stat.label}
               </p>
 

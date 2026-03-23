@@ -3,10 +3,10 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <section className="relative w-full overflow-hidden pt-[40px] md:pt-[85px]">
+    <section className="relative w-full md:rounded-t-r24  md:mt-s104 min-h-screen md:min-h-[95vh] overflow-hidden">
 
       {/* Video Wrapper */}
-      <div className="relative w-full h-[calc(100vh-80px)] ">
+      <div className="relative w-full h-[100vh] ">
 
         <video
           src="/Images/vid.mp4"

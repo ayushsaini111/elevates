@@ -40,7 +40,7 @@ export default function PrecisionSection() {
             {precisionSection.description}
           </p>
 
-          <Button variant="secondary"  as="link" href={"/comingsoon"}>
+          <Button variant="secondary"  as="link" href={"/civil"}>
             {precisionSection.buttonText}
           </Button>
         </div>
@@ -86,7 +86,7 @@ export default function PrecisionSection() {
             {precisionSection.description}
           </p>
 
-          <Button variant="secondary"  as="link" href={"/comingsoon"}>
+          <Button variant="secondary"  as="link" href={"/civil"}>
             {precisionSection.buttonText}
           </Button>
 
