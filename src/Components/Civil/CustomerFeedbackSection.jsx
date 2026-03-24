@@ -17,10 +17,10 @@ export default function CustomerFeedbackSection() {
   };
 
   return (
-    <section className="pl-s24 pl-s32 bg-white md:pl-s64  xl:px-0 py-s104 md:py-s160 overflow-hidden">
+    <section className="  bg-white    py-s104 md:py-s160 overflow-hidden">
 
       {/* HEADER ROW */}
-      <div className="max-w-7xl mx-auto  flex justify-between items-start pr-s24">
+      <div className="max-w-7xl mx-auto px-s24 flex justify-between items-start ">
 
         <div className="max-w-xl">
           <p className="text-primary-main body-default mb-s24">
@@ -60,7 +60,7 @@ export default function CustomerFeedbackSection() {
   <div
     ref={scrollRef}
     className="
-      flex gap-s16 md:gap-s40 overflow-x-auto
+      flex gap-s8 md:gap-s16 overflow-x-auto 
       scroll-smooth hide-scrollbar
       pl-[calc((100vw-1280px)/2+24px)]
     "
@@ -74,14 +74,14 @@ export default function CustomerFeedbackSection() {
   <div className="absolute -bottom-20 md:-bottom-30 right-s40 flex gap-4">
     <button
       onClick={scrollLeft}
-      className="w-12 h-12  heading-h3 pt-1 rounded-full bg-primary-main flex items-center justify-center"
+      className="w-12 h-12 cursor-pointer heading-h3 pt-1 rounded-full bg-primary-main flex items-center justify-center"
     >
       ‹
     </button>
 
     <button
       onClick={scrollRight}
-      className="w-12 h-12 heading-h3 pt-1 rounded-full bg-primary-main  flex items-center justify-center"
+      className="w-12 h-12 cursor-pointer heading-h3 pt-1 rounded-full bg-primary-main  flex items-center justify-center"
     >
       ›
     </button>

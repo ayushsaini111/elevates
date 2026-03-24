@@ -25,7 +25,7 @@ export default function Navbar({ logo }) {
           <div
             className={`
           flex items-center justify-between 
-          bg-secondary-light/90 rounded-r40 px-s16 py-s8
+          bg-secondary-light rounded-r40 px-s16 py-s8
         `}
           >
             {/* LOGO */}

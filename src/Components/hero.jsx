@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <section className="relative w-full md:rounded-t-r24  md:mt-s104 min-h-screen md:min-h-[95vh] overflow-hidden">
+    <section className="relative w-full  rounded-t-r32 lg:rounded-t-r40  mt-[90px]  md:mt-s104 min-h-screen md:min-h-[95vh]  overflow-hidden">
 
       {/* Video Wrapper */}
       <div className="relative w-full h-[100vh] ">

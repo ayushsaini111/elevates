@@ -103,7 +103,7 @@ export default function ProjectsCarousel() {
         {/* Carousel */}
         <div
           ref={containerRef}
-          className="flex gap-s16 lg:gap-s16  overflow-x-auto hide-scrollbar scroll-smooth  pl-s24 md:pl-[10%] lg:pl-[25%] "
+          className="flex gap-s16  overflow-x-auto hide-scrollbar scroll-smooth  px-s24 md:px-[10%] lg:px-[20%] "
         >
           {list.map((item, i) => {
             const isActive = i === active;
@@ -114,11 +114,11 @@ export default function ProjectsCarousel() {
                 className={`
                   flex-shrink-0 transition-all duration-500 pt-s64
                   ${isActive ? "scale-100 opacity-100" : "scale-90 opacity-90"}
-                  max-w-[95%] sm:min-w-[65%] lg:min-w-[80%]
+                  max-w-[95%] sm:min-w-[65%] lg:min-w-[896px]
                 `}
               >
                 {/* Image */}
-                <div className="relative h-[260px] sm:h-[320px] md:h-[380px] lg:h-[460px] rounded-r24 overflow-hidden shadow-xl">
+                <div className="relative h-[260px] sm:h-[320px] md:h-[380px] lg:h-[600px] rounded-r24 overflow-hidden shadow-xl">
                   <Image
                     src={item.image}
                     alt={item.title}
@@ -126,7 +126,7 @@ export default function ProjectsCarousel() {
                     className="object-cover "
                   />
 
-                  <div className="absolute bottom-s16 right-s16 bg-black/60 text-white px-s16 py-s8 caption rounded-r8">
+                  <div className="absolute bottom-s16 right-s16 bg-black/30 text-white px-s16 py-s8 caption rounded-r16">
                     {item.title}
                   </div>
                 </div>

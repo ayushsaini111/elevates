@@ -34,7 +34,7 @@ export default function CTASection() {
           <p className="heading-h4 text-white/90 mb-s32">
             {subtitle}
           </p>
-           <Button >
+           <Button href={"/comingsoon"} as="link" >
             
                Schedule Construction Consultation →
               </Button>

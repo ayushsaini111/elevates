@@ -5,7 +5,7 @@
     --primary-main: #01503A;
     --primary-light: #7F9782;
     --secondary-main: #B38F6F;
-    --secondary-light: #E3E3E3;
+    --secondary-light: #F6F6F6;
     --text-on-primary: #ffffff;
     --background: #FFFFFF;
     --foreground: #0A0A0A;
@@ -47,7 +47,7 @@
     --color-secondary-main: var(--secondary-main);
     --color-secondary-light: var(--secondary-light);
     --color-worst: var(--red);
-
+--color-neutral-light: var(--neutral-light);
     --color-background: var(--background);
     --color-foreground: var(--foreground);
 
@@ -109,6 +109,7 @@
     --primary-light: #e2a638;
     --background: #FFFFFF;
     --text-on-primary: #000000;
+    --neutral-light: #D9D9D9;
     --logo: url("/Images/logo2.png");
 }
 

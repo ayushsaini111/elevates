@@ -7,7 +7,7 @@ export default function Hero() {
   const { title, subtitle, image, alt } = civilData.hero;
 
   return (
-    <section className="relative w-full bg-background lg:rounded-t-r24  lg:mt-s104 min-h-screen lg:min-h-[95vh] overflow-hidden">
+    <section className="relative w-full bg-background rounded-t-r32 lg:rounded-t-r40  mt-[90px] min-h-screen lg:min-h-[95vh] overflow-hidden">
       
       {/* Background Image */}
       <Image

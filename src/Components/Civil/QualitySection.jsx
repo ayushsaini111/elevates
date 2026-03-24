@@ -30,12 +30,12 @@ export default function QualitySection() {
         </div>
 
         {/* Slider */}
-        <div className="relative md:pl-s64 pl-s16 ">
+        <div className="relative  ">
 
           <div
             ref={scrollRef}
             className="
-              flex gap-s24 overflow-x-auto
+              flex  overflow-x-auto
               hide-scrollbar scroll-smooth
               pl-[calc((100vw-1280px)/2+24px)]
             "
@@ -44,7 +44,7 @@ export default function QualitySection() {
               <div
                 key={i}
                 className="
-                  min-w-[85%] sm:min-w-[60%] lg:min-w-[30%]
+                  min-w-[85%] sm:min-w-[60%] mx-s16 lg:min-w-[30%]
                   bg-secondary-light rounded-r24 p-s24
                   flex flex-col gap-s16
                 "
@@ -70,7 +70,7 @@ export default function QualitySection() {
           <div className="absolute -bottom-20 md:-bottom-30 right-s24 flex gap-4">
             <button
               onClick={scrollLeft}
-            className="w-12 h-12  heading-h3 pt-1 rounded-full bg-primary-main  flex items-center justify-center"
+            className="w-12 h-12 cursor-pointer heading-h3 pt-1 rounded-full bg-primary-main  flex items-center justify-center"
 
             >
               ‹
@@ -78,7 +78,7 @@ export default function QualitySection() {
 
             <button
               onClick={scrollRight}
-        className="w-12 h-12  heading-h3 pt-1 rounded-full bg-primary-main  flex items-center justify-center"
+        className="w-12 h-12 cursor-pointer  heading-h3 pt-1 rounded-full bg-primary-main  flex items-center justify-center"
 
             >
               ›

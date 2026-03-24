@@ -9,7 +9,7 @@ export default function ConstructionProcess() {
   const { title, note, steps, image } = civilData.process;
 
   return (
-    <section className="w-full bg-white pt-s104 md:px-s32 lg:px-0 md:pt-s160 overflow-hidden">
+    <section className="w-full bg-white  pt-s104 md:px-s32 lg:px-0 md:pt-s160 overflow-hidden">
       <div className="relative w-full max-w-7xl mx-auto px-s16 sm:px-s24">
 
         {/* Heading */}

@@ -6,7 +6,7 @@ export default function TestimonialCard({ item }) {
       min-w-[250px] md:min-w-[280px]
       bg-secondary-light
       rounded-r24
-      p-s24
+      p-s24 mx-s16
    
   
     ">
