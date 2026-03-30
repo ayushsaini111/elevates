@@ -15,7 +15,7 @@ export default function PropertiesSection() {
     (async () => {
       try {
         // ✅ Homepage: only showOnFrontend=true
-        const res = await fetch(`${CMS_API}/api/properties?public=true`);
+        const res = await fetch(`/api/properties?public=true`);
         const data = await res.json();
         setProperties(
           (Array.isArray(data) ? data : []).map((item) => ({

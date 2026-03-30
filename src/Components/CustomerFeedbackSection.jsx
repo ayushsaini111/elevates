@@ -17,7 +17,7 @@ export default function CustomerFeedbackSection() {
   useEffect(() => {
     (async () => {
       try {
-        const res = await fetch(`${CMS_API}/api/reviews`);
+        const res = await fetch(`/api/reviews`);
         const data = await res.json();
 
         if (Array.isArray(data) && data.length > 0) {

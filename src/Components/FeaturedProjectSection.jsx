@@ -14,7 +14,7 @@ export default function FeaturedProjectSection() {
     const fetchData = async () => {
       try {
         const res = await fetch(
-          `${process.env.NEXT_PUBLIC_BASE_URL}/api/map`
+          `/api/map`
         );
         const result = await res.json();
 

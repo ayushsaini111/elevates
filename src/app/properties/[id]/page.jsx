@@ -30,7 +30,7 @@ export default function PropertyDetailPage() {
   useEffect(() => {
     (async () => {
       try {
-        const res = await fetch(`${CMS_API}/api/properties?id=${id}`);
+        const res = await fetch(`/api/properties?id=${id}`);
         const data = await res.json();
         if (res.ok) setP(data);
       } catch (e) {

@@ -28,7 +28,7 @@ export default function LeadModal({ isOpen, onClose, property }) {
 
     try {
       // ✅ Send to backend
-      const res = await fetch(`${CMS_API}/api/leads`, {
+      const res = await fetch(`/api/leads`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),

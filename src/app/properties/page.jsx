@@ -43,7 +43,7 @@ export default function PropertiesPage() {
     (async () => {
       try {
         // ✅ Fetch ALL properties (no public filter)
-        const res = await fetch(`${CMS_API}/api/properties`);
+        const res = await fetch(`/api/properties`);
         const data = await res.json();
         setProperties(
           (Array.isArray(data) ? data : []).map((item) => ({

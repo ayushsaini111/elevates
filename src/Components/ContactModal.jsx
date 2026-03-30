@@ -74,7 +74,7 @@ export default function ContactModal({ isOpen, onClose }) {
 
   const onSubmit = async (data) => {
     try {
-      const res = await fetch(`${CMS_API}/api/contact`, {
+      const res = await fetch(`/api/contact`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
