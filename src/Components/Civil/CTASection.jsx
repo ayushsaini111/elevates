@@ -1,12 +1,12 @@
-// components/CTASection.jsx
-
 "use client";
-
+import { useState } from "react";
 import Image from "next/image";
 import { civilData } from "@/Data/civil";
 import Button from "../ui/Button";
+import ContactModal from "../ContactModal";
 
 export default function CTASection() {
+   const [show, setShow] = useState(false);
   const { title, subtitle, buttonText, image } = civilData.cta;
 
   return (
@@ -34,7 +34,7 @@ export default function CTASection() {
           <p className="heading-h4 text-white/90 mb-s32">
             {subtitle}
           </p>
-           <Button href={"/comingsoon"} as="link" >
+           <Button onClick={() => setShow(true)} >
             
                Schedule Construction Consultation →
               </Button>
@@ -43,6 +43,7 @@ export default function CTASection() {
 
         </div>
       </div>
+      <ContactModal isOpen={show} onClose={() => setShow(false)} />
 
     </section>
   );

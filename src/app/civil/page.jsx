@@ -6,17 +6,17 @@ import ServiceIntro from '@/Components/Civil/ServiceIntro'
 import ConstructionModels from '@/Components/Civil/ConstructionModels'
 import ProjectsCarousel from '@/Components/Civil/ProjectsCarousel'
 import ConstructionProcess from '@/Components/Civil/ConstructionProcess'
-import CustomerFeedbackSection from '@/Components/Civil/CustomerFeedbackSection'
+import CustomerFeedbackSection from '@/Components/CustomerFeedbackSection'
 import QualitySection from '@/Components/Civil/QualitySection'
 import FaqSection from '@/Components/FaqSection'
-import  {civilData}  from "@/Data/civil";
 import CTASection from '@/Components/Civil/CTASection'
+import  {civilData}  from "@/Data/civil";
 
 const {faqs}=civilData
 
 function page() {
   return (
-    <div>
+    <div className='theme-civil' >
       <Hero/>
       <ServiceIntro/>
       <ConstructionModels/>

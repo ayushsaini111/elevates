@@ -4,11 +4,11 @@ import Link from "next/link"
 import Image from "next/image"
 import { footerData } from "@/Data/footerLinks"
 
-export default function Footer({image}) {
+export default function Footer({image,color="primary-main",text="on-primary" ,hover="white"}) {
   console.log(image);
   
   return (
-    <footer className="bg-primary-main text-on-primary">
+    <footer className={`  bg-${color}  text-${text}`}>
 
       {/* ================= TOP SECTION ================= */}
       <div className="px-6 md:px-12 lg:px-20 py-16">
@@ -27,10 +27,10 @@ export default function Footer({image}) {
           {/* Services */}
           <div>
             <h4 className="font-semibold mb-4">Services</h4>
-            <ul className="space-y-2 body-default text-on-primary">
+            <ul className={`space-y-2 body-default text-${text}`}>
               {footerData.services.map((item, index) => (
                 <li key={index}>
-                  <Link href={item.href} target="_blank" className="hover:text-white transition">
+                  <Link href={item.href} target="_blank" className={`hover:text-${hover} transition`}>
                     {item.name}
                   </Link>
                 </li>
@@ -41,10 +41,10 @@ export default function Footer({image}) {
           {/* Company */}
           <div>
             <h4 className="font-semibold mb-4">Company</h4>
-            <ul className="space-y-2 body-default text-on-primary">
+            <ul className={`space-y-2 body-default text-${text}`}>
               {footerData.company.map((item, index) => (
                 <li key={index}>
-                  <Link href={item.href} target="_blank" className="hover:text-white transition">
+                  <Link href={item.href} target="_blank" className={`hover:text-${hover} transition`}>
                     {item.name}
                   </Link>
                 </li>
@@ -55,10 +55,10 @@ export default function Footer({image}) {
           {/* Social Links */}
           <div>
             <h4 className="font-semibold mb-4">Social Links</h4>
-            <ul className="space-y-2 body-default text-on-primary">
+            <ul className={`space-y-2 body-default text-${text}`}>
               {footerData.social.map((item, index) => (
                 <li key={index}>
-                  <Link href={item.href} target="_blank" className="hover:text-white transition">
+                  <Link href={item.href} target="_blank" className={`hover:text-${hover} transition`}>
                     {item.name}
                   </Link>
                 </li>
@@ -69,7 +69,7 @@ export default function Footer({image}) {
           {/* Contact */}
           <div>
             <h4 className="font-semibold mb-4">Contact</h4>
-            <p className="body-default text-on-primary leading-relaxed">
+            <p className={`ody-default text-${text} leading-relaxed`}>
               Location: {footerData.contact.address}
             </p>
           </div>
@@ -83,10 +83,10 @@ export default function Footer({image}) {
           <p>© 2026 Ayansh Elevating Lives. All rights reserved.</p>
 
           <div className="flex gap-6">
-            <Link href="/comingsoon" className="hover:text-white transition">
+            <Link href="/comingsoon" className={`hover:text-${hover} transition`}>
               Privacy Policy
             </Link>
-            <Link href="/comingsoon" className="hover:text-white transition">
+            <Link href="/comingsoon" className={`hover:text-${hover} transition`}>
               Terms & Condition
             </Link>
           </div>

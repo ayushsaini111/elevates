@@ -51,7 +51,7 @@ export default function CraftedSection() {
           </p>
 
           {/* Button */}
-          <Button variant="secondary"  as="link" href={"/comingsoon"}>
+          <Button variant="secondary"  as="link" href={"/builders"}>
             {craftedSection.buttonText}
           </Button>
 

@@ -17,7 +17,7 @@ const {faqs}=homePage
 export default function Home() {
   return (
    <div>
-    <p className="heading-h1">
+    <p className="theme-default heading-h1">
     </p>
     <Hero/>
     <PropertiesSection/>

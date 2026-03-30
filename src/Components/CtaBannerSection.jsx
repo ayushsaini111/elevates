@@ -1,11 +1,14 @@
 "use client";
-
+"use client";
+import { useState } from "react";
 import Image from "next/image";
 import Button from "./ui/Button";
 import { homePage } from "../Data/homePage";
+import ContactModal from "./ContactModal";
 
 export default function CtaBannerSection() {
   const { ctaBannerSection } = homePage;
+   const [show, setShow] = useState(false);
 
   return (
     <section className="py-s80 px-s24 md:px-s64  xl:px-0 md:py-s160 ">
@@ -79,7 +82,7 @@ export default function CtaBannerSection() {
               {ctaBannerSection.bottomText}
             </p>
 
-            <Button variant="secondary"  as="link" href={"/comingsoon"} >
+            <Button variant="secondary"  onClick={() => setShow(true)} >
               {ctaBannerSection.buttonText}
             </Button>
 
@@ -88,6 +91,8 @@ export default function CtaBannerSection() {
         </div>
 
       </div>
+            <ContactModal isOpen={show} onClose={() => setShow(false)} />
+
 
     </section>
   );

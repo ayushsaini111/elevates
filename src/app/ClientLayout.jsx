@@ -8,13 +8,13 @@ export default function ClientLayout({ children }) {
 
   const getThemeData = () => {
     if (pathname.startsWith("/infra"))
-      return { theme: "theme-infra", logo: "/logo2.png" };
+      return { theme: "theme-infra", logo: "/Infra/logo.png" };
 
     if (pathname.startsWith("/civil"))
       return { theme: "theme-civil", logo: "/Civil/logo.png" };
 
     if (pathname.startsWith("/builders"))
-      return { theme: "theme-builders", logo: "/logo2.png" };
+      return { theme: "theme-builders", logo: "/Builder/logo.png" };
 
     if (pathname.startsWith("/elevating"))
       return { theme: "theme-elevating", logo: "/logo2.png" };

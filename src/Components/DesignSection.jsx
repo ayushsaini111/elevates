@@ -41,7 +41,7 @@ export default function DesignSection() {
             {designSection.description2}
           </p>
 
-          <Button variant="secondary"  as="link" href={"/comingsoon"}>
+          <Button variant="secondary"  as="link" href={"/infra"}>
             {designSection.buttonText}
           </Button>
         </div>
@@ -99,7 +99,7 @@ export default function DesignSection() {
             {designSection.description2}
           </p>
 
-          <Button  as="link" href={"/comingsoon"}variant="secondary">
+          <Button  as="link" href={"/infra"}variant="secondary">
             {designSection.buttonText}
           </Button>
 

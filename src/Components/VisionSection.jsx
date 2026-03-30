@@ -34,7 +34,7 @@ export default function VisionSection() {
           ))}
         </h1>
         <div className="">
-          <Button as="link" href={"/comingsoon"}>{visionSection.buttonText}</Button>
+          <Button as="link" href={"/properties"}>{visionSection.buttonText}</Button>
         </div>
 
    </div>
