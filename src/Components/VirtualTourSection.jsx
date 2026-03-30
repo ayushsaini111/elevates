@@ -22,7 +22,7 @@ export default function VirtualTourSection() {
     const fetchVideos = async () => {
       try {
         const res = await fetch(
-         `${process.env.NEXT_PUBLIC_CMS_URL}/api/videos`
+         `${process.env.NEXT_PUBLIC_BASE_URL}/api/videos`
         );
         const data = await res.json();
 

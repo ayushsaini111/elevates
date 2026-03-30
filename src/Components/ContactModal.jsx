@@ -11,7 +11,7 @@ import {
   CheckCircle2,
 } from "lucide-react";
 
-const CMS_API = process.env.NEXT_PUBLIC_CMS_URL || "";
+const CMS_API = process.env.NEXT_PUBLIC_BASE_URL || "";
 
 const COMPANIES = [
   {

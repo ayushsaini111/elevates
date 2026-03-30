@@ -4,7 +4,7 @@ import { homePage } from "../Data/homePage";
 import { useRef, useEffect, useState } from "react";
 import TestimonialCard from "@/Components/ui/TestimonialCard";
 
-const CMS_API = process.env.NEXT_PUBLIC_CMS_URL || "";
+const CMS_API = process.env.NEXT_PUBLIC_BASE_URL || "";
 
 export default function CustomerFeedbackSection() {
   const { customerFeedbackSection } = homePage;

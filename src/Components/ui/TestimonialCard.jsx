@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function TestimonialCard({ item }) {
   return (
     <div className="
-      max-w-[250px] md:max-w-[280px]
+      min-w-[250px] md:max-w-[280px]
       bg-secondary-light
       rounded-r24
       p-s24 mx-s16

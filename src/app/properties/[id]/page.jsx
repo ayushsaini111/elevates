@@ -9,7 +9,7 @@ import {
 } from "lucide-react";
 import LeadModal from "@/Components/lead";
 
-const CMS_API = process.env.NEXT_PUBLIC_CMS_URL || "";
+const CMS_API = process.env.NEXT_PUBLIC_BASE_URL || "";
 
 const formatPrice = (n) => {
   if (!n) return "—";

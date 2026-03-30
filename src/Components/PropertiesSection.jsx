@@ -4,7 +4,7 @@ import { homePage } from "../Data/homePage";
 import PropertyCard from "@/Components/ui/PropertyCard";
 import Button from "./ui/Button";
 
-const CMS_API = process.env.NEXT_PUBLIC_CMS_URL || "";
+const CMS_API = process.env.NEXT_PUBLIC_BASE_URL || "";
 
 export default function PropertiesSection() {
   const { propertiesSection } = homePage;

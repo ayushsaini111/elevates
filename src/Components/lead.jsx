@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { X, Phone, User, Loader2 } from "lucide-react";
 
 // ✅ CONFIGURE
-const CMS_API = process.env.NEXT_PUBLIC_CMS_URL || "";
+const CMS_API = process.env.NEXT_PUBLIC_BASE_URL || "";
 const WHATSAPP_NO = "9105787349"; // ← replace with admin number
 
 export default function LeadModal({ isOpen, onClose, property }) {

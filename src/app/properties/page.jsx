@@ -3,7 +3,7 @@ import { useEffect, useState, useMemo, useCallback } from "react";
 import PropertyCard from "@/Components/ui/PropertyCard";
 import { Search, SlidersHorizontal, X, ChevronDown, Building2 } from "lucide-react";
 
-const CMS_API = process.env.NEXT_PUBLIC_CMS_URL || "";
+const CMS_API = process.env.NEXT_PUBLIC_BASE_URL || "";
 
 const TYPES = [
   { value: "all", label: "All Types" },
