@@ -8,7 +8,7 @@ export default function Hero() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:3001/api/hero")
+    fetch("/api/hero")
       .then((res) => res.json())
       .then((data) => {
         setHero(data);

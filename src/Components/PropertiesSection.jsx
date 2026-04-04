@@ -46,8 +46,8 @@ export default function PropertiesSection() {
         <div className="mb-s80">
           <h2 className="heading-h2 text-main">{propertiesSection.headingTop}</h2>
           <h3 className="heading-h2 text-main uppercase">
-            <span className="heading-h3 text-primary-main">{propertiesSection.highlight}</span>
-            {propertiesSection.headingBottom}
+            <span className="heading-h3 text-primary-main">{propertiesSection.highlight} </span>
+             {propertiesSection.headingBottom}
           </h3>
         </div>
 

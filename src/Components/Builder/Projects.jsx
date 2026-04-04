@@ -32,7 +32,7 @@ export default function Projects() {
   useEffect(() => {
     async function fetchDesigns() {
       try {
-        const res = await fetch("http://localhost:3001/api/designs");
+        const res = await fetch("/api/designs");
         const data = await res.json();
         if (Array.isArray(data)) {
           const interior = data

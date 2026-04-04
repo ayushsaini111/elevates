@@ -31,7 +31,7 @@ export default function Projects() {
   useEffect(() => {
     async function fetchExterior() {
       try {
-        const res = await fetch("http://localhost:3001/api/designs?category=exterior");
+        const res = await fetch("/api/designs?category=exterior");
         const data = await res.json();
         if (Array.isArray(data)) {
           setImages(data.map((d) => d.image));
