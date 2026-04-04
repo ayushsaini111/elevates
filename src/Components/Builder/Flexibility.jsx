@@ -57,7 +57,7 @@ export default function Flexibility() {
                   <button
                     onClick={() => setActive(i)}
                     className={`
-                      px-s24 py-s16 rounded-full heading-h6 transition-all max-w-[250px]
+                      px-s24 py-s16 rounded-full heading-h6 transition-all max-w-[250px] cursor-pointer
                       ${
                         active === i
                           ? "text-on-primary font-medium bg-gradient-to-r from-[var(--primary-main)] to-[#88510F] hover:from-[var(--primary-main)] hover:to-[var(--primary-light)] transition-all duration-300 shadow-md hover:shadow-lg"

@@ -137,14 +137,14 @@ export default function ContactModal({ isOpen, onClose }) {
             <div className="bg-primary-main p-s24 sm:p-s32 relative">
               <button
                 onClick={handleClose}
-                className="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-white/60 hover:text-white hover:bg-white/20 transition-all"
+                className="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-on-primary hover:text-white hover:bg-white/20 transition-all"
               >
                 <X size={16} />
               </button>
 
               <div className="flex items-center gap-s12 mb-s8">
                 <div>
-                  <p className="caption text-primary-light/90 uppercase tracking-[0.2em]">
+                  <p className="caption text-on-primary uppercase tracking-[0.2em]">
                     Get in Touch
                   </p>
                   <h3
@@ -159,7 +159,7 @@ export default function ContactModal({ isOpen, onClose }) {
                 </div>
               </div>
 
-              <p className="caption text-primary-light">
+              <p className="caption text-on-primary ">
                 Fill in the details and we'll reach out to you
               </p>
             </div>
@@ -296,9 +296,7 @@ export default function ContactModal({ isOpen, onClose }) {
                           >
                             {company.label}
                           </p>
-                          <p className="caption text-secondary/60 mt-0.5">
-                            {company.desc}
-                          </p>
+                    
                         </div>
 
                         {isSelected && (

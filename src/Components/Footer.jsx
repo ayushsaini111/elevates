@@ -4,7 +4,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { footerData } from "@/Data/footerLinks"
 
-export default function Footer({image,color="primary-main",text="on-primary" ,hover="white"}) {
+export default function Footer({image,color="primary-main",text="on-primary" ,hover="white/50"}) {
   console.log(image);
   
   return (

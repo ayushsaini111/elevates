@@ -226,7 +226,7 @@ useEffect(() => {
       {/* Image Track */}
       <div
         ref={trackRef}
-        className="flex gap-s16 px-s16 overflow-x-auto hide-scrollbar scroll-smooth px-[calc(50%-448px)] select-none"
+        className="flex gap-s16 px-s16 xl:pl-[27%] overflow-x-auto hide-scrollbar scroll-smooth px-[calc(50%-448px)] select-none"
         onMouseDown={onMouseDown}
         onMouseMove={onMouseMove}
         onMouseUp={onMouseUp}

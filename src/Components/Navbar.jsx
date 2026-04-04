@@ -21,7 +21,7 @@ export default function Navbar({ logo }) {
     <>
       {/* ══ NAVBAR ══ */}
       <header className="fixed top-4 md:top-5 left-0 w-full z-[100]">
-        <div className="mx-auto max-w-7xl px-s16 md:px-0">
+        <div className="mx-auto max-w-7xl px-s16 xl:px-0">
           <div className="flex items-center justify-between bg-secondary-light rounded-r40 px-s16 py-s8">
             {/* LOGO */}
             <Link href="/">
@@ -63,12 +63,26 @@ export default function Navbar({ logo }) {
             </div>
 
             {/* MOBILE BUTTON */}
-            <button
-              onClick={() => setOpen(!open)}
-              className="lg:hidden text-xl"
-            >
-              {open ? "✕" : "☰"}
-            </button>
+        <button
+  onClick={() => setOpen(!open)}
+  className="lg:hidden flex flex-col justify-center items-center w-8 h-8 space-y-1"
+>
+  <span
+    className={`block h-1 w-6 bg-primary-main border border-primary-main rounded-full transition-all duration-300 ${
+      open ? "rotate-45 translate-y-2" : ""
+    }`}
+  />
+  <span
+    className={`block h-1 w-6 bg-primary-main border border-primary-main rounded-full transition-all duration-300 ${
+      open ? "opacity-0" : ""
+    }`}
+  />
+  <span
+    className={`block h-1 w-6 bg-primary-main border border-primary-main rounded-full transition-all duration-300 ${
+      open ? "-rotate-45 -translate-y-2" : ""
+    }`}
+  />
+</button>
           </div>
         </div>
       </header>

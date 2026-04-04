@@ -26,7 +26,7 @@ function page() {
       <CustomerFeedbackSection/>
     <FaqSection faqs={faqs}/>
 <CTASection/>
-      <Footer image={"/Civil/footer.png"} />
+      <Footer image={"/Civil/footer.png"} hover={"white"}/>
     </div>
   )
 }

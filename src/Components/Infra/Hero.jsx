@@ -16,7 +16,7 @@ export default function Hero() {
           alt="background"
           fill
           priority
-          className="object-cover opacity-40"
+          className="object-cover opacity-10"
         />
       </div>
 

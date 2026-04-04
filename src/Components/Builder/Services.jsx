@@ -82,8 +82,8 @@ export default function Services() {
             transition-all
             ${
               activeItem === i
-                ? "bg-[var(--secondary-main)] text-[var(--text-on-primary)]"
-                : "bg-[var(--secondary-light)] text-[var(--text-secondary)]"
+                ? "bg-[var(--secondary-main)]"
+                : "bg-[var(--secondary-light)] "
             }
           `}
         >

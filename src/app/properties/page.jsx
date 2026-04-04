@@ -237,7 +237,7 @@ export default function PropertiesPage() {
             </p>
             {activeCount > 0 && (
               <button onClick={clearAll}
-                className="px-s24 py-s12 bg-primary-main text-on-primary rounded-r16 caption font-semibold hover:opacity-90 transition-opacity">
+                className="px-s24 py-s16 bg-primary-main text-on-primary rounded-r16 caption font-semibold hover:opacity-90 transition-opacity">
                 Clear Filters
               </button>
             )}

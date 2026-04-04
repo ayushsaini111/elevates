@@ -1,33 +1,74 @@
 "use client";
-import React from "react";
+
+import React, { useEffect, useState } from "react";
+import Image from "next/image";
 
 export default function Hero() {
+  const [hero, setHero] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetch("http://localhost:3001/api/hero")
+      .then((res) => res.json())
+      .then((data) => {
+        setHero(data);
+        setLoading(false);
+      })
+      .catch(() => setLoading(false));
+  }, []);
+
+  if (loading) {
+    return (
+      <section className="relative w-full h-[60vh] md:h-[80vh] lg:h-screen bg-gray-100 animate-pulse rounded-t-r32 lg:rounded-t-r40 my-[90px] overflow-hidden" />
+    );
+  }
+
+  if (!hero) {
+    return null; // or fallback hero
+  }
+
   return (
-    <section className="relative w-full  rounded-t-r32 lg:rounded-t-r40  mt-[90px]  md:mt-s104 min-h-screen md:min-h-[95vh]  overflow-hidden">
-
-      {/* Video Wrapper */}
-      <div className="relative w-full h-[100vh] ">
-
+    <section className="relative w-full h-[60vh] md:h-[80vh] lg:h-screen my-[90px] overflow-hidden rounded-t-r32 lg:rounded-t-r40">
+      {/* ── BACKGROUND MEDIA ── */}
+      {hero.mediaType === "video" ? (
         <video
-          src="/Images/vid.mp4"
+          src={hero.media}
           className="absolute inset-0 w-full h-full object-cover"
           autoPlay
           loop
           muted
           playsInline
+          poster="/fallback-hero.jpg" // optional fallback image while video loads
         />
+      ) : (
+        <Image
+          src={hero.media}
+          alt="Hero Banner"
+          fill
+          priority
+          quality={95}
+          className="object-cover"
+          sizes="100vw"
+        />
+      )}
 
-        {/* Optional Overlay */}
-        <div className="absolute inset-0 bg-black/20" />
+      {/* Dark overlay for text readability */}
+      <div className="absolute inset-0 bg-black/30" />
 
-        {/* Content Example */}
-        <div className="relative z-10 flex items-center mx-auto max-w-lg md:max-w-5xl justify-center h-full text-center px-s24">
-          <h1 className="heading-h1 text-background">
-            A Peaceful Journey from Land <span className="heading-h3 underline pb-2">to</span> Home
+      {/* ── CONTENT ── */}
+      <div className="relative z-10 flex items-center justify-center h-full text-center px-s24">
+        <div className="max-w-lg md:max-w-5xl">
+          <h1 className="heading-h1 text-white drop-shadow-2xl">
+            A Peaceful Journey from Land{" "}
+            <span className="heading-h3 underline decoration-white/70 underline-offset-8 pb-2 block md:inline">
+              to
+            </span>{" "}
+            Home
           </h1>
         </div>
-
       </div>
+
+      {/* Optional bottom fade */}
     </section>
   );
 }
