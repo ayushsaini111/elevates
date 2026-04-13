@@ -11,7 +11,7 @@ export default function DesignSection() {
     <section className="relative ">
 
       {/* ================= MOBILE LAYOUT ================= */}
-      <div className="xl:hidden flex flex-col items-center text-center px-s24 py-s80 gap-s40">
+      <div className="xl:hidden flex flex-col items-center text-center px-s24 py-s80 gap-s8">
 
         {/* Top Image */}
         <div className="w-full relative rotate-90 h-[350px] md:h-[800px]">
@@ -28,7 +28,7 @@ export default function DesignSection() {
           
             <div>
       <p className="text-left text-primary-main pl-s8">Architecture Designing</p>
-          <h2 className="heading-h2 text-main mb-s24">
+          <h2 className="heading-h2 text-main mb-s16">
             {designSection.heading}
           </h2>
 
@@ -37,7 +37,7 @@ export default function DesignSection() {
           <p className="body-default text-secondary">
             {designSection.description1}
           </p>
-          <p className="body-default text-secondary mb-s32">
+          <p className="body-default text-secondary mb-s16">
             {designSection.description2}
           </p>
 

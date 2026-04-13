@@ -8,7 +8,7 @@ import ContactModal from "./ContactModal";
 export default function FeaturedProjectSection() {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
- const [show, setShow] = useState(false);
+  const [show, setShow] = useState(false);
   // ✅ FETCH
   useEffect(() => {
     const fetchData = async () => {
@@ -31,7 +31,7 @@ export default function FeaturedProjectSection() {
   }, []);
 
   return (
-    <section className="py-s104 px-s24 md:px-s64 xl:px-0 md:py-s160 bg-secondary-light">
+    <section className=" px-s24 md:px-s64 xl:px-0  lg:py-s104">
       <div className="max-w-7xl mx-auto">
 
         {/* TOP CARD */}
@@ -79,11 +79,11 @@ export default function FeaturedProjectSection() {
               <ul className="space-y-s8 body-default opacity-90">
                 {loading
                   ? Array.from({ length: 3 }).map((_, i) => (
-                      <li key={i} className="h-4 bg-white/30 rounded animate-pulse" />
-                    ))
+                    <li key={i} className="h-4 bg-white/30 rounded animate-pulse" />
+                  ))
                   : data?.points?.map((item, index) => (
-                      <li key={index}>• {item}</li>
-                    ))}
+                    <li key={index}>• {item}</li>
+                  ))}
               </ul>
             </div>
           </div>
@@ -104,23 +104,25 @@ export default function FeaturedProjectSection() {
             </div>
 
             <div className="flex justify-end gap-s16">
-        <a
-  href={data?.image?.replace("/upload/", "/upload/fl_attachment/")}
-  className="text-primary-main font-medium"
->
-  Download Brochure
-</a>
+       <div className="flex justify-center items-center gap-s16">
+               <a
+                href={data?.image?.replace("/upload/", "/upload/fl_attachment/")}
+                className="text-primary-main font-medium"
+              >
+                Download Brochure
+              </a>
 
-              <Button  onClick={() => setShow(true)}>
+              <Button onClick={() => setShow(true)}>
                 Schedule Visit
               </Button>
+       </div>
             </div>
           </div>
 
         </div>
 
         {/* VIDEO */}
-        <div className="mt-s80 md:mt-s104 rounded-r32 overflow-hidden border-8 border-secondary-main">
+        <div className="mt-s64 md:mt-s104 rounded-r32 overflow-hidden border-8 border-secondary-light">
 
           {loading ? (
             <div className="w-full h-[500px] bg-gray-200 animate-pulse" />
@@ -138,8 +140,8 @@ export default function FeaturedProjectSection() {
         </div>
 
       </div>
-            <ContactModal isOpen={show} onClose={() => setShow(false)} />
-      
+      <ContactModal isOpen={show} onClose={() => setShow(false)} />
+
     </section>
   );
 }

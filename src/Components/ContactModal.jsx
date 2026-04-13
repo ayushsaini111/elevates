@@ -126,7 +126,7 @@ export default function ContactModal({ isOpen, onClose }) {
             </p>
             <button
               onClick={handleClose}
-              className="px-s32 py-s12 bg-primary-main text-on-primary rounded-r16 caption font-semibold hover:opacity-90 transition-opacity"
+              className="px-s32 py-s16 bg-primary-main text-on-primary rounded-r16 caption font-semibold hover:opacity-90 transition-opacity"
             >
               Done
             </button>

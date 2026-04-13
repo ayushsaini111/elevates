@@ -4,7 +4,7 @@ export const builderData = {
     title2: "That Reflect How You Live",
     subtitle: "Interior & Exterior Design for Homes, Villas & Societies",
     cta: "Discuss Your Design →",
-    image: "/Builder/hero.jpg",
+    image: "/Builder/hero.jpeg",
     alt: "Interior design setup",
   },
  philosophy: {
@@ -12,9 +12,9 @@ export const builderData = {
     title2:"It’s About Creating Spaces That Feel Intuitive,",
     title3:"Functional, And Timeless",
     subtitle1:
-      "We approach interior and exterior design with a focus on lifestyle, ",
+      "Every space tells a story, we design it to feel right, function ",
     subtitle2:
-      "context, and long-term value.",
+      " effortlessly, and last beautifully. ",
 
     image: "/Builder/sofa.png",
     alt: "Modern red sofa",
@@ -23,7 +23,7 @@ export const builderData = {
   services: {
     title: "Our Design Services",
     subtitle:
-      "We approach interior and exterior design with a focus on lifestyle, context, and long-term value.",
+      "Designs that reflect your style and stand the test of time. ",
 
     categories: [
       {
@@ -77,38 +77,16 @@ export const builderData = {
     title2: "Interior & Exterior ",
     title3: "Projects",
     subtitle:
-      "We approach interior and exterior design with a focus on lifestyle, context, and long-term value.",
+      "Projects that transformed buildings into beautiful, livable spaces. ",
 
-    tabs: [
-      {
-        name: "Interior",
-        images: [
-          "/Builder/one.jpg",
-          "/Builder/one.jpg",
-          "/Builder/one.jpg",
-          "/Builder/one.jpg",
-          "/Builder/two.jpg",
-          "/Builder/three.jpg",
-          "/Builder/four.jpg",
-        ],
-      },
-      {
-        name: "Exterior",
-        images: [
-           "/Builder/one.jpg",
-          "/Builder/two.jpg",
-          "/Builder/three.jpg",
-          "/Builder/four.jpg",
-        ],
-      },
-    ],
+    
   },
 
  processData: { 
   header: {
       image: "/Builder/Frame.png",
       description:
-        "We approach interior and exterior design with a focus on lifestyle, context, and long-term value.",
+        "A process that brings together design, detail, and execution to create spaces that feel complete. ",
     },
 
     steps: [
@@ -140,8 +118,8 @@ flexibility: {
 
     points: [
       {
-        title: "Tailored to your lifestyle",
-        desc: "We approach interior and exterior design with a focus on lifestyle, context, and long-term value.",
+        title: "Built Around Your Lifestyle",
+        desc: "Design solutions shaped to support how you live, combining comfort, usability, and refined aesthetics.",
       },
       {
         title: "Adaptable to budget & scope",

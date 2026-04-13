@@ -41,9 +41,9 @@ export default function PropertiesSection() {
   }, []);
 
   return (
-    <section className="py-s80 md:py-s160 px-s32 md:px-s64 xl:px-0">
+    <section className="py-s80 md:py-s104 xl:py-s160 px-[20px] md:px-s40 xl:px-0">
       <div className="max-w-7xl mx-auto">
-        <div className="mb-s80">
+        <div className="mb-s32 md:mb-s80">
           <h2 className="heading-h2 text-main">{propertiesSection.headingTop}</h2>
           <h3 className="heading-h2 text-main uppercase">
             <span className="heading-h3 text-primary-main">{propertiesSection.highlight} </span>
@@ -51,7 +51,7 @@ export default function PropertiesSection() {
           </h3>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-s32 md:gap-x-s40 gap-y-s64 md:gap-y-s80">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-s16 gap-y-s40 md:gap-x-s40 md:gap-y-s64 md:gap-y-s80">
           {loading
             ? Array.from({ length: 6 }).map((_, i) => <SkeletonCard key={i} />)
             : properties.map((property) => (
@@ -70,12 +70,12 @@ export default function PropertiesSection() {
 function SkeletonCard() {
   return (
     <div className="animate-pulse">
-      <div className="w-full h-[280px] bg-secondary-light rounded-r24" />
+      <div className="w-full h-[150px] sm:h-[280px] bg-secondary-light rounded-r24" />
       <div className="pt-s24 px-s16 space-y-s8">
         <div className="h-5 w-1/3 bg-secondary-light rounded" />
         <div className="h-4 w-3/4 bg-secondary-light rounded" />
         <div className="h-4 w-1/2 bg-secondary-light rounded" />
-        <div className="flex justify-between pt-s16">
+        <div className="flex items-center gap-1 justify-between pt-s16">
           <div className="h-9 w-24 bg-secondary-light rounded-full" />
           <div className="h-4 w-20 bg-secondary-light rounded" />
         </div>

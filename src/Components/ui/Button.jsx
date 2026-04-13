@@ -14,8 +14,7 @@ function Button({
 
   const variants = {
     primary:"bg-primary-main text-on-primary font-medium hover:bg-primary-light",
-    builder:
-  "text-on-primary font-medium bg-gradient-to-r from-[var(--primary-main)] to-[#88510F] hover:from-[var(--primary-main)] hover:to-[var(--primary-light)] transition-all duration-300 shadow-md hover:shadow-lg"
+    builder:"text-on-primary font-medium bg-gradient-to-r from-[var(--primary-main)] to-[#88510F] hover:from-[var(--primary-main)] hover:to-[var(--primary-light)] transition-all duration-300 shadow-md hover:shadow-lg"
   };
 
   const allClasses = `${baseClass} ${

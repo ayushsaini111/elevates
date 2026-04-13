@@ -19,7 +19,7 @@ export default function Hero() {
 
   if (loading) {
     return (
-      <section className="relative w-full h-[60vh] md:h-[80vh] lg:h-screen bg-gray-100 animate-pulse rounded-t-r32 lg:rounded-t-r40 my-[90px] overflow-hidden" />
+      <section className="relative w-full h-[90vh] lg:h-screen bg-gray-100 animate-pulse rounded-r32 lg:rounded-r40 my-[90px] overflow-hidden" />
     );
   }
 
@@ -28,7 +28,7 @@ export default function Hero() {
   }
 
   return (
-    <section className="relative w-full h-[60vh] md:h-[80vh] lg:h-screen my-[90px] overflow-hidden rounded-t-r32 lg:rounded-t-r40">
+    <section className="relative h-[90vh] lg:h-screen  xl:mx-s40 overflow-hidden mt-[90px] md:mt-s104  rounded-r32 lg:rounded-r40 ">
       {/* ── BACKGROUND MEDIA ── */}
       {hero.mediaType === "video" ? (
         <video

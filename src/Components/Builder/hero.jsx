@@ -10,8 +10,8 @@ export default function BuilderHero() {
    const [show, setShow] = useState(false);
 
   return (
-    <section className="w-full px-s16   py-s24  mt-s80">
-      <div className="relative w-full max-w-[1400px] mx-auto rounded-[var(--radius-r24)] overflow-hidden">
+    <section className="w-full px-s16 sm:px-s24 lg:px-s40   py-s24 md:py-0  mt-s64 md:mt-s104">
+      <div className="relative w-full mx-auto rounded-[var(--radius-r24)] overflow-hidden">
         
         {/* Background */}
         <div className="relative w-full h-[85vh] md:h-[100vh]">

@@ -122,21 +122,21 @@ export default function Projects() {
           </div>
 
           {/* Skeleton */}
-          <div className="flex flex-col lg:flex-row items-center gap-s40">
+          <div className="flex flex-col lg:flex-row items-center gap-s16">
             <div className="order-3 lg:order-1 flex lg:flex-col gap-s16 p-s8">
               {[1, 2, 3].map((i) => (
                 <div
                   key={i}
-                  className="flex-shrink-0 w-[100px] h-[80px] sm:w-[150px] sm:h-[110px] lg:w-[160px] lg:h-[140px] rounded-r16 md:rounded-r32 bg-gray-100 animate-pulse"
+                  className="flex-shrink-0 w-[100px] h-[80px] sm:w-[150px] sm:h-[110px] lg:w-[160px] lg:h-[140px] rounded-r16 md:rounded-r32 bg-secondary-light animate-pulse"
                 />
               ))}
             </div>
             <div className="order-2 lg:order-2 flex lg:flex-col gap-s8">
               {[1, 2, 3].map((i) => (
-                <div key={i} className="w-2 h-2 rounded-full bg-gray-200 animate-pulse" />
+                <div key={i} className="w-2 h-2 rounded-full bg-secondary-light animate-pulse" />
               ))}
             </div>
-            <div className="order-1 lg:order-3 w-[92%] lg:flex-1 h-[280px] sm:h-[400px] lg:h-[520px] mx-s24 rounded-r24 bg-gray-100 animate-pulse" />
+            <div className="order-1 lg:order-3 w-[92%] lg:flex-1 h-[280px] sm:h-[400px] lg:h-[520px] mx-s24 rounded-r24 bg-secondary-light animate-pulse" />
           </div>
         </div>
       </section>
@@ -155,11 +155,11 @@ export default function Projects() {
   const safeCurrentImage = safeImages[safeIndex];
 
   return (
-    <section className="w-full py-s80">
-      <div className="max-w-5xl mx-auto space-y-s64">
+    <section className="w-full py-s80 md:py-s104 xl:py-s160">
+      <div className="max-w-5xl mx-auto ">
 
         {/* Heading */}
-        <div className="text-center mx-auto space-y-s16 px-s24">
+        <div className="text-center mx-auto  px-s32">
           <h2 className="builder-h2 uppercase leading-tight">{projects.title1}</h2>
           <h2 className="builder-h2 uppercase leading-tight">{projects.title2}</h2>
           <h2 className="builder-h2 uppercase leading-tight">{projects.title3}</h2>
@@ -169,7 +169,7 @@ export default function Projects() {
         </div>
 
         {/* Layout */}
-        <div className="flex flex-col lg:flex-row items-center gap-s40">
+        <div className="flex mt-s64 flex-col lg:flex-row items-center gap-s16 sm:px-s32">
 
           {/* LEFT — thumbnails with scroll-fade hint */}
           <div className="order-3 lg:order-1 relative flex-shrink-0 w-full lg:w-auto">
@@ -266,10 +266,12 @@ export default function Projects() {
           {/* MAIN IMAGE */}
           <div className="
             order-1 lg:order-3
-            relative w-[92%] lg:flex-1
-            h-[280px] sm:h-[400px] lg:h-[520px] mx-s24
+            relative w-[320px] mx-auto sm:w-full lg:flex-1
+           h-[400px] lg:h-[520px] mx-s24
             rounded-r24 overflow-hidden shadow-xl flex-shrink-0
-          ">
+          "
+            style={{ boxShadow: "-4px 4px 4px 0 rgba(0,0,0,0.25)" }}>
+            
             {safeCurrentImage && (
               <Image
                 key={safeCurrentImage}
@@ -286,7 +288,7 @@ export default function Projects() {
 
         {/* TAB SWITCH — only show when more than one tab has images */}
         {activeTabs.length > 1 && (
-          <div className="flex justify-center">
+          <div className="flex justify-center mt-s24">
             <div className="flex bg-secondary-light rounded-full p-s6">
               {activeTabs.map((t, i) => (
                 <button

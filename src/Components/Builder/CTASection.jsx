@@ -26,10 +26,10 @@ export default function CTASection() {
         </div>
 
         {/* 🔥 DARK + GOLD OVERLAY */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-[rgba(160,100,20,0.85)]" />
+        <div className="absolute inset-0 " />
 
         {/* 🔥 CONTENT */}
-        <div className="absolute inset-x-0 bottom-20 flex flex-col items-center justify-center text-center px-s16">
+        <div className="absolute inset-x-0 bottom-10 md:bottom-20 flex flex-col items-center justify-center text-center px-s16">
 
           {/* TITLE */}
           <h2 className="text-white font-semibold">

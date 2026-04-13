@@ -46,7 +46,7 @@ export default function CraftedSection() {
           </h1>
 
           {/* Description */}
-          <p className="body-default text-secondary max-w-sm mb-s24 md:mb-s32">
+          <p className="body-default text-secondary max-w-[240px] md:max-w-sm mb-s24 md:mb-s32">
             {craftedSection.description}
           </p>
 

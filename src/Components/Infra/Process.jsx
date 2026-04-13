@@ -7,7 +7,7 @@ export default function Process() {
   const { process } = infraData;
 
   return (
-    <section className="w-full pt-s80 ">
+    <section className="w-full  ">
       <div className=" absolute z-40 w-full mx-auto text-center mt-s80 md:px-0 space-y-s24">
 
         {/* Heading */}
@@ -47,10 +47,10 @@ export default function Process() {
           >
             <div
               className="
-                flex  md:gap-s40 
+                flex sm:gap-s32  md:gap-s24 
                 overflow-x-auto md:overflow-visible 
                 hide-scrollbar 
-                md:justify-center
+                md:justify-center 
               "
             >
 
@@ -63,7 +63,7 @@ export default function Process() {
                     bg-background/90 backdrop-blur-md 
                     rounded-r32 
                     p-s16 text-left shadow-lg
-                    shrink-0 mx-s16 sm:mx-0
+                    shrink-0 mx-s16 sm:mx-s16
                   "
                 >
                   <p className="heading-h6 px-s8">

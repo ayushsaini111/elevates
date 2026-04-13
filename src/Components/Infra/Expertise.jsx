@@ -7,7 +7,7 @@ export default function Expertise() {
   const { expertise } = infraData;
 
   return (
-    <section className="w-full px-s16">
+    <section className="w-full px-s16 py-s40 ">
       <div className="max-w-7xl mx-auto space-y-s80 md:space-y-s160">
 
         {/* Top */}
@@ -22,7 +22,7 @@ export default function Expertise() {
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 px-s6 lg:grid-cols-4 gap-s80 md:gap-s64 lg:gap-s40">
+        <div className="grid grid-cols-1 sm:grid-cols-2 px-s6 lg:grid-cols-4 gap-s40">
 
           {expertise.items.map((item, i) => {
   const isEven = i % 2 === 0;
@@ -54,7 +54,7 @@ export default function Expertise() {
           ${!isEven ? "lg:order-1" : "lg:order-2"}
         `}
       >
-        <h3 className="heading-h5 text-main">
+        <h3 className="infra-bold-h5  text-main">
           {item.title}
         </h3>
         <p className="body-default text-secondary ">

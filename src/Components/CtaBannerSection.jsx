@@ -11,7 +11,7 @@ export default function CtaBannerSection() {
    const [show, setShow] = useState(false);
 
   return (
-    <section className="py-s80 px-s24 md:px-s64  xl:px-0 md:py-s160 ">
+    <section className="pb-s80 px-s24 md:px-s64  xl:px-0 md:pb-s160 ">
 
       <div className="max-w-7xl mx-auto ">
 
@@ -78,7 +78,7 @@ export default function CtaBannerSection() {
             gap-s16
           ">
 
-            <p className="text-white body-default max-w-sm">
+            <p className=" body-default max-w-sm">
               {ctaBannerSection.bottomText}
             </p>
 

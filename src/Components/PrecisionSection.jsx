@@ -8,7 +8,7 @@ export default function PrecisionSection() {
   const { precisionSection } = homePage;
 
   return (
-    <section className="relative py-s80 md:py-0 overflow-hidden">
+    <section className="relative pb-s80 md:py-0 overflow-hidden">
 
       {/* ================= MOBILE ================= */}
       <div className="lg:hidden px-s24 flex flex-col items-center text-center ">
@@ -28,7 +28,7 @@ export default function PrecisionSection() {
         {/* Content */}
         <div className="max-w-md sm:max-w-2xl">
           
-          <h2 className="heading-h2 text-main mb-s24 leading-tight">
+          <h2 className="heading-h2 text-main mb-s8 leading-tight">
             {precisionSection.heading.map((line, index) => (
               <span key={index} className="block">
                 {line}
@@ -36,7 +36,7 @@ export default function PrecisionSection() {
             ))}
           </h2>
 
-          <p className="body-default text-secondary mb-s32">
+          <p className="body-default text-secondary mb-s16">
             {precisionSection.description}
           </p>
 
@@ -67,7 +67,7 @@ export default function PrecisionSection() {
           absolute
           right-10
           top-113 2xl:top-1/2
-          -translate-y-1/2
+          -translate-y-1/1.5
           w-[40%]
           max-w-xl
         ">

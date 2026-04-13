@@ -23,8 +23,8 @@ function page() {
       <ProjectsCarousel/>
       <ConstructionProcess/>
       <QualitySection/>
-      <CustomerFeedbackSection/>
-    <FaqSection faqs={faqs}/>
+      <CustomerFeedbackSection font={"civil-h2"}/>
+    <FaqSection  font={"civil-h2"} faqs={faqs}/>
 <CTASection/>
       <Footer image={"/Civil/footer.png"} hover={"white"}/>
     </div>

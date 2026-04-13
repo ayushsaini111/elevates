@@ -3,6 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import LeadModal from "@/Components/lead";
+import Button from "./Button";
 
 const formatPrice = (n) => {
   if (!n) return "—";
@@ -17,10 +18,10 @@ export default function PropertyCard({ property }) {
 
   return (
     <>
-      <div className="group bg-white rounded-r24 overflow-hidden hover:shadow-[0_8px_40px_rgba(0,0,0,0.08)] transition-all duration-300">
+    <div className="group bg-background  rounded-r24 overflow-hidden hover:shadow-[0_8px_40px_rgba(0,0,0,0.08)] transition-all duration-300">
         {/* Image */}
         <Link href={`/properties/${property.id}`}>
-          <div className="relative w-full h-[280px] overflow-hidden">
+          <div className="relative w-full h-[150px] sm:h-[280px] rounded-r24 overflow-hidden">
             <Image
               src={property.image || "/placeholder.jpg"}
               alt={property.location || "Property"}
@@ -29,7 +30,7 @@ export default function PropertyCard({ property }) {
             />
             {/* Type badge */}
             {property.type && (
-              <span className="absolute top-3 left-3 caption px-3 py-1 bg-white/90 backdrop-blur-sm text-main rounded-r8 font-medium">
+              <span className="absolute hidden sm:block top-3 left-3 caption px-3 py-1 bg-white/90 backdrop-blur-sm text-main rounded-r8 font-medium">
                 {property.type}
               </span>
             )}
@@ -42,9 +43,9 @@ export default function PropertyCard({ property }) {
         </Link>
 
         {/* Content */}
-        <div className="p-s24 space-y-s8">
-          <div className="flex items-baseline gap-2">
-            <h3 className="heading-h4 font-semibold text-main">
+        <div className="py-s8 px-[4px]  sm:p-s24 sm:space-y-s8">
+          <div className="flex items-baseline gap-1 sm:gap-2">
+            <h3 className="text-sm sm:text-xl font-semibold text-main">
               {formatPrice(property.price)}
             </h3>
             {property.area && (
@@ -68,37 +69,36 @@ export default function PropertyCard({ property }) {
               <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
               <circle cx="12" cy="10" r="3" />
             </svg>
-            <span className="truncate">{property.location}</span>
+            <span className="truncate caption">{property.location}</span>
           </p>
 
           {/* Specs */}
           {(property.bedrooms > 0 || property.bathrooms > 0) && (
-            <div className="flex items-center gap-3 caption text-secondary">
+            <div className="flex items-center gap-1 sm:gap-3 caption text-secondary">
               {property.bedrooms > 0 && (
                 <span>{property.bedrooms} Bed</span>
               )}
               {property.bathrooms > 0 && (
                 <span>{property.bathrooms} Bath</span>
               )}
-              {property.areaNum > 0 && (
-                <span>{property.areaNum} sqft</span>
-              )}
+           
             </div>
           )}
 
           {/* Actions */}
-          <div className="flex items-center justify-between pt-s16 border-t border-secondary-light">
+          <div className="flex items-center justify-between pt-s8 sm:pt-s16 border-t border-secondary-light">
             <button
               onClick={() => setOpen(true)}
-              className="px-s24 py-s8 rounded-full bg-primary-main text-on-primary caption font-semibold hover:opacity-90 transition-opacity"
+              className="px-s16 py-s6 sm:px-s24 text-[11px] sm:text-lg sm:py-s8 rounded-full bg-primary-main text-on-primary   hover:opacity-90 transition-opacity"
             >
               Book Call
             </button>
+            {/* <Button children={"Book Call"} className="text-[10px] w-fit sm:text-lg px-s16 md:px-24" onClick={() => setOpen(true)}/> */}
             <Link
               href={`/properties/${property.id}`}
-              className="caption text-primary-main font-medium hover:text-primary-light transition-colors"
+              className="text-[10px] sm:text-lg  text-primary-main font-medium hover:text-primary-light transition-colors"
             >
-              View Details →
+              View Details
             </Link>
           </div>
         </div>

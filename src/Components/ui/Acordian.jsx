@@ -15,10 +15,10 @@ export default function Accordion({
         onClick={onToggle}
         className="
           w-full flex justify-between items-center
-          py-s16 text-left
+          pb-s16 text-left
         "
       >
-        <span className="heading-h6 text-main">
+        <span className="heading-h5 text-main max-w-[250px] sm:max-w-full">
           {question}
         </span>
 
@@ -42,7 +42,7 @@ export default function Accordion({
           ${isOpen ? "max-h-[300px] py-s8" : "max-h-0 py-0"}
         `}
       >
-        <p className="body-default max-w-5xl text-secondary leading-relaxed">
+        <p className="heading-h6  text-secondary leading-relaxed">
           {answer}
         </p>
       </div>

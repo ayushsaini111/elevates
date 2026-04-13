@@ -351,7 +351,7 @@ export default function PropertyDetailPage() {
           </div>
           <button
             onClick={() => setModal(true)}
-            className="px-s32 py-s12 bg-primary-main text-on-primary rounded-r16 heading-h6 hover:opacity-90 transition-opacity"
+            className="px-s32 py-s16 bg-primary-main text-on-primary rounded-r16 heading-h6 hover:opacity-90 transition-opacity"
           >
             Book Call
           </button>

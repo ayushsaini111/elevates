@@ -17,18 +17,18 @@ export default function Page() {
     <>
       <section>
 
-        <div className="theme-infra space-y-s80 md:space-y-s160">
+        <div className="theme-infra ">
           <Hero/>
           <Philosophy />
           <Expertise />
           <Process />
           <Projects />
           <WhyWorkSection/>
-        </div>
-        <CustomerFeedbackSection />
-        <FAQSection faqs={faqs} />
+        <CustomerFeedbackSection font="infra-h2" />
+        <FAQSection faqs={faqs} font="infra-h2" />
         <CTASection />
         <Footer image={"/Builder/footer.png"} />
+        </div>
       </section>
     </>
   );

@@ -7,10 +7,10 @@ export default function WhyWorkSection() {
     infraData.whyWorkSection;
 
   return (
-    <section className="px-s16 md:px-s32 xl:px-0 bg-white space-y-s64 md:space-y-s104 overflow-hidden">
+    <section className=" bg-white space-y-s64 md:space-y-s104 overflow-hidden">
 
       {/* 🔵 TOP L */}
-      <div className="mx-auto w-full max-w-4xl pointer-events-none">
+      <div className="mx-auto px-s32 xl:px-0 w-full max-w-4xl pointer-events-none">
 
         {/* vertical */}
         <div className="w-[40px] h-[120px] md:w-[60px] md:h-[180px] xl:w-[80px] xl:h-[220px] 
@@ -23,9 +23,10 @@ export default function WhyWorkSection() {
       </div>
 
       {/* CONTENT */}
-      <div className="max-w-4xl mx-auto text-center">
+      <div className="max-w-4xl mx-auto text-center ">
 
-        <h2 className="infra-h2 text-main uppercase">
+<div className="px-s32 xl:px-0">
+          <h2 className="infra-h2 text-main uppercase">
           {headingTop}
         </h2>
 
@@ -33,24 +34,31 @@ export default function WhyWorkSection() {
           {headingBottom}
         </h3>
 
-        <p className="heading-h6 mt-s16 mb-s32 md:mb-s48 max-w-xs md:max-w-md mx-auto">
+        <p className="heading-h6 mb-s64  mt-s24 md:mb-s80 max-w-xs md:max-w-md mx-auto">
           {description}
         </p>
+</div>
 
         {/* ✅ RESPONSIVE GRID (important fix) */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-s16 justify-items-center">
+        <div className=" pl-s32 sm:px-s32 
+  flex overflow-x-auto gap-s16 px-s16
+  sm:grid sm:grid-cols-2 md:grid-cols-4
+  scroll-smooth hide-scrollbar
+">
 
           {points.map((item, index) => (
             <div
               key={index}
               className="
-                p-s24
-                w-full max-w-[260px]
-                bg-secondary-light 
-                rounded-r40 
-                body-default 
-                text-center
-              "
+    flex-shrink-0
+    w-[220px] sm:w-full max-w-[260px]
+    
+    p-s24
+    bg-secondary-light 
+    rounded-r40 
+    body-default 
+    text-center
+  "
             >
               {item}
             </div>
@@ -61,7 +69,7 @@ export default function WhyWorkSection() {
       </div>
 
       {/* 🔵 BOTTOM L */}
-      <div className="mx-auto w-full max-w-4xl pointer-events-none flex flex-col items-end">
+      <div className="mx-auto w-full max-w-4xl pointer-events-none flex flex-col px-s32 xl:px-0 items-end">
 
         {/* horizontal */}
         <div className="h-[40px] md:h-[60px] xl:h-[80px] w-full 

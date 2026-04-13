@@ -90,9 +90,11 @@
 /* Default */
 .theme-default {
     --primary-main: #01503A;
-    --primary-light: #7F9782;
-    
+    --primary-light: #79b07f;
+    --secondary-main: #c4cabe;
+    --secondary-light: #ebf0e8;
     --background: #FFFFFF;
+
 }
 
 .text-on-primary {
@@ -104,18 +106,19 @@
     --primary-main: #004AAD;
     --primary-light: #60A5FA;
     --secondary-light: #e8edf2;
-    --logo: url("/Images/logo2.png");
+
+
 }
 
 /* 🟡 Civil */
 .theme-civil {
     --primary-main: #FFBE43;
     --primary-light: #e2a638;
-    --secondary-light: #f1ede6;
+    --secondary-light: #f4f2ee;
     --background: #FFFFFF;
     --text-on-primary: #000000;
     --neutral-light: #D9D9D9;
-    --logo: url("/Images/logo2.png");
+
 }
 
 /* ⚫ Builders */
@@ -125,18 +128,9 @@
      --secondary-main: #b8b8b7;
     --secondary-light: #ebe7e7;
     --background: #FFFFFF;
-    --logo: url("/Images/logo2.png");
+
 }
 
-/* 🔵 Elevating */
-.theme-elevating {
-    --primary-main: ##004AAD;
-    --primary-light: #60A5FA;
-    --background: #EFF6FF;
-    --logo: url("/logos/logo2.png");
-}
-
-/* 🧠 Typography */
 
 /* ✅ HEADINGS */
 
@@ -206,7 +200,7 @@
 }
 
 .heading-h5,
-.civil-h5,.infra-h5 {
+.civil-h5,.infra-h5,.infra-bold-h5 {
     @apply font-medium;
     font-size: clamp(1rem, 0.6vw + 0.9rem, 1.25rem);
     line-height: 1.3;
@@ -217,6 +211,10 @@
 }
 .infra-h5 {
     font-family: var(--font-polinary);
+}
+.infra-bold-h5 {
+    @apply font-bold;
+
 }
 
 .heading-h6 {

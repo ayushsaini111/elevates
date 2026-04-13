@@ -7,11 +7,11 @@ export default function Philosophy() {
   const { philosophy } = builderData;
 
   return (
-    <section className="w-full px-s16 sm:px-s24 lg:px-s32 pt-s40 ">
-      <div className="max-w-7xl mx-auto text-center flex flex-col items-center">
+    <section className="w-full px-s16 sm:px-s24 h-fit lg:px-s32 pt-s40 md:py-s160 ">
+      <div className="max-w-7xl  mx-auto text-center flex flex-col items-center">
         
         {/* Heading (desktop split) */}
-        <div className="absolute hidden md:block ">
+        <div className="absolute hidden  md:block ">
           <h2 className="builder-h3">{philosophy.title1}</h2>
           <h2 className="builder-h3 mt-s8">
             {philosophy.title2}
@@ -29,12 +29,13 @@ export default function Philosophy() {
         </div>
 
         {/* Image */}
-        <div className="relative w-full max-w-[1280px] mt-s32 sm:mt-s40">
+        <div className="relative bottom-20 sm:bottom-40 max-h-[780px] w-full max-w-[1280px] sm:mt-s40">
           <Image
             src={philosophy.image}
             alt={philosophy.alt}
             width={600}
             height={400}
+            
             className="w-full h-auto object-contain"
           />
         {/* Curved subtitle */}
@@ -42,10 +43,10 @@ export default function Philosophy() {
           {philosophy.subtitle1}{philosophy.subtitle2}
         </p>
       
-        <p className="hidden xl:block lg:absolute lg:bottom-79 lg:translate-x-52 lg:rotate-9  sm:mt-s32 text-secondary heading-h5">
+        <p className="hidden xl:block lg:absolute lg:-bottom-25 lg:translate-x-45 lg:rotate-9  sm:mt-s32 text-secondary heading-h5">
           {philosophy.subtitle1}
         </p>
-        <p className="hidden xl:block lg:absolute lg:bottom-78 lg:right-50 lg:-rotate-17   sm:mt-s32 text-secondary  heading-h5 ">
+        <p className="hidden xl:block lg:absolute lg:-bottom-28 lg:right-38 lg:-rotate-16   sm:mt-s32 text-secondary  heading-h5 ">
           {philosophy.subtitle2}
         </p>
         </div>

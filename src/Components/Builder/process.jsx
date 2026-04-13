@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { builderData } from "@/Data/builder";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export default function Process() {
   const { processData } = builderData;
@@ -75,9 +76,9 @@ export default function Process() {
   };
 
   // Slide directions
-  const incoming  = direction === "down" ? "translateY(100%)"  : "translateY(-100%)";
-  const outgoing  = direction === "down" ? "translateY(-100%)" : "translateY(100%)";
-  const incomingH = direction === "down" ? "translateX(100%)"  : "translateX(-100%)";
+  const incoming = direction === "down" ? "translateY(100%)" : "translateY(-100%)";
+  const outgoing = direction === "down" ? "translateY(-100%)" : "translateY(100%)";
+  const incomingH = direction === "down" ? "translateX(100%)" : "translateX(-100%)";
   const outgoingH = direction === "down" ? "translateX(-100%)" : "translateX(100%)";
 
   return (
@@ -103,20 +104,7 @@ export default function Process() {
         .img-exit-v  { animation: slideOutV 0.55s cubic-bezier(0.4,0,0.2,1) forwards; }
         .img-enter-h { animation: slideInH  0.55s cubic-bezier(0.4,0,0.2,1) forwards; }
         .img-exit-h  { animation: slideOutH 0.55s cubic-bezier(0.4,0,0.2,1) forwards; }
-        .arrow-btn {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          width: 36px;
-          height: 36px;
-          border-radius: 50%;
-          border: 1.5px solid rgba(0,0,0,0.15);
-          background: rgba(255,255,255,0.85);
-          backdrop-filter: blur(4px);
-          transition: background 0.2s, border-color 0.2s, transform 0.15s;
-          cursor: pointer;
-          flex-shrink: 0;
-        }
+
         .arrow-btn:active { transform: scale(0.9); }
       `}</style>
 
@@ -127,7 +115,7 @@ export default function Process() {
         <div className="max-w-5xl mx-auto space-y-s40 sm:space-y-s56">
 
           {/* HEADER */}
-          <div className="flex flex-col sm:flex-row justify-between items-center gap-s16 text-center sm:text-right">
+          <div className="flex justify-between items-center gap-s16 text-center sm:text-right">
             <div className="relative w-[140px] sm:w-[200px] lg:w-[260px]">
               <Image
                 src={processData.header.image}
@@ -137,13 +125,13 @@ export default function Process() {
                 className="object-contain"
               />
             </div>
-            <p className="heading-h6 text-secondary max-w-[280px] sm:max-w-sm lg:max-w-md">
+            <p className="heading-h6 text-secondary text-right max-w-[160px] mt-s16 sm:max-w-sm lg:max-w-md">
               {processData.header.description}
             </p>
           </div>
 
           {/* MAIN */}
-          <div className="flex flex-col lg:flex-row items-center gap-s32 lg:gap-s24">
+          <div className="flex flex-col xl:flex-row items-center xl:gap-s24">
 
             {/* LEFT */}
             <div className="flex-1 space-y-s24 text-center lg:text-left">
@@ -160,7 +148,7 @@ export default function Process() {
                   CESS
                 </h2>
               </div>
-              <div className="bg-primary-main text-white px-s24 py-s8 rounded-full w-full mx-auto lg:mx-0">
+              <div className="hidden xl:block bg-primary-main text-white px-s24 py-s8 rounded-full w-full mx-auto lg:mx-0">
                 {current.subtitle}
               </div>
             </div>
@@ -169,11 +157,11 @@ export default function Process() {
             <div className="flex flex-col lg:flex-row items-center gap-s24 sm:gap-s40">
 
               {/* IMAGE + mobile controls wrapper */}
-              <div className="order-1 lg:order-2 flex flex-col items-center gap-s40">
+              <div className="order-1 lg:order-2 flex flex-col items-center gap-s24">
 
                 {/* IMAGE CONTAINER */}
                 <div
-                  className="relative w-[270px] sm:w-[310px] lg:w-[400px] h-[450px] sm:h-[500px] lg:h-[740px] rounded-[200px] overflow-hidden border-[8px] border-[#EDEDED]"
+                  className="relative w-[340px] h-[250px] sm:w-[310px] lg:w-[400px] sm:h-[450px] sm:h-[500px] lg:h-[740px] rounded-[200px] overflow-hidden border-[8px] border-[#EDEDED]"
                   onTouchStart={handleTouchStart}
                   onTouchEnd={handleTouchEnd}
                 >
@@ -196,6 +184,7 @@ export default function Process() {
                       >
                         <Image src={prevStep.image} alt="" fill className="object-cover scale-105" />
                       </div>
+
                     </>
                   )}
 
@@ -223,35 +212,34 @@ export default function Process() {
                 {/* MOBILE CONTROLS: ‹ dots › — hidden on desktop */}
                 <div className="flex items-center gap-s32 lg:hidden">
                   {/* Prev arrow */}
-                  <button className="arrow-btn" onClick={goPrev} aria-label="Previous">
-                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-                      <path d="M9 2L4 7L9 12" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
-                    </svg>
+                  <button className="rounded-full arrow-btn transition-all  p-[4px] bg-gradient-to-r from-[var(--primary-main)] to-[var(--primary-light)]" onClick={goPrev} aria-label="Previous">
+                    <ChevronLeft size={24} color="white"  />
                   </button>
 
                   {/* Dots */}
-                  <div className="flex gap-[8px] items-center">
+                  <div className="flex gap-[12px] items-center">
                     {processData.steps.map((_, i) => (
                       <button
                         key={i}
                         onClick={() => goTo(i)}
-                        className={`rounded-full transition-all duration-300 ${
-                          active === i
-                            ? "w-[8px] h-[8px] bg-main scale-125"
-                            : "w-[6px] h-[6px] bg-gray-300"
-                        }`}
+                        className={`rounded-full bg transition-all duration-300 ${active === i
+                            ? "w-[10px] h-[10px] bg-primary-main scale-125"
+                            : "w-[8px] h-[8px] bg-gray-300"
+                          }`}
                       />
                     ))}
                   </div>
 
                   {/* Next arrow */}
-                  <button className="arrow-btn" onClick={goNext} aria-label="Next">
-                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-                      <path d="M5 2L10 7L5 12" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
-                    </svg>
+                  <button className="rounded-full arrow-btn transition-all  p-[4px] bg-gradient-to-r from-[var(--primary-main)] to-[var(--primary-light)]" onClick={goNext} aria-label="Next">
+                    <ChevronRight size={24} color="white" />
                   </button>
                 </div>
-
+           <div className="w-full px-s16">
+                   <div className="block xl:hidden bg-primary-main text-white px-s24 py-s8 rounded-full w-full mx-auto">
+                    {current.subtitle}
+                </div>
+           </div>
               </div>
 
               {/* DOTS — desktop only, vertical */}
@@ -260,9 +248,8 @@ export default function Process() {
                   <button
                     key={i}
                     onClick={() => goTo(i)}
-                    className={`w-s8 h-s8 rounded-full transition-all duration-300 ${
-                      active === i ? "bg-main scale-125" : "bg-gray-300"
-                    }`}
+                    className={`w-s8 h-s8 rounded-full transition-all duration-300 ${active === i ? "bg-main scale-125" : "bg-gray-300"
+                      }`}
                   />
                 ))}
               </div>

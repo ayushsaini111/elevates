@@ -2,7 +2,7 @@
 
 export const infraData = {
   hero: {
-    title: "Architecture That Transforms Space Into Value",
+    title: "Architecture That Lives With You ",
     subtitle1: "Residential ",
     subtitle2: "Commercial",
     subtitle3: "Societies",
@@ -11,38 +11,38 @@ export const infraData = {
   },
   philosophy: {
     tagline:
-      "Design is not how a building looks. It's how it lives, functions, and grows in value.",
+      "Architecture is not just for aesthetics — it’s built to live, last, and stay timeless.",
     heading:
-      "We approach architecture with a balance of aesthetics, practicality, and long-term usability.",
+      "We approach architecture with a balance of aesthetics, practicality, and long-term",
   },
   expertise: {
     title: "Our Architectural Expertise",
     description:
-      "We approach interior and exterior design with a focus on lifestyle, context, and long-term value.",
+      "Our expertise lies in designing functional, scalable, and future-ready spaces across a complete spectrum of project types. ",
 
     items: [
       {
-        title: "Independent Homes & Villas",
+        title: "Residential Apartments & Housing Societies ",
         description:
-          "We approach interior and exterior design with a focus on lifestyle, context, and long-term value.",
+          "We design residential developments that balance comfort, efficiency, and community living. Apartments • Housing Societies • Builder Floors • Gated Communities ",
         image: "/Infra/1.jpg",
       },
       {
-        title: "Residential Apartments & Societies",
+        title: "Commercial & Mixed-Use Developments",
         description:
-          "We approach interior and exterior design with a focus on lifestyle, context, and long-term value.",
-        image: "/Images/home2.jpg",
+          "Spaces designed for business performance, customer experience, and long-term value. Shops • Office Spaces • Showrooms • Mixed-Use Buildings ",
+        image: "/Infra/1.jpg",
       },
       {
-        title: "Commercial & Mixed-Use Buildings",
+        title: " Master Planning & Layout Design",
         description:
-          "We approach interior and exterior design with a focus on lifestyle, context, and long-term value.",
-        image: "/Images/home3.jpg",
+          "Strategic planning that organizes land, movement, and infrastructure for scalable development. Townships • Plot Layouts • Land Development • Site Planning ",
+        image: "/Images/home4.jpg",
       },
       {
-        title: "Master Planning & Layout Design",
+        title: "Independent Homes & Villas",
         description:
-          "We approach interior and exterior design with a focus on lifestyle, context, and long-term value.",
+          "Personalized homes designed around lifestyle, comfort, and timeless living. Independent Houses • Villas • Farmhouses • Custom Homes ",
         image: "/Images/home4.jpg",
       },
     ],
@@ -50,7 +50,7 @@ export const infraData = {
   process: {
     title: "Our Architectural Process",
     description:
-      "We approach interior and exterior design with a focus on lifestyle, context, and long-term value.",
+      "A process designed to shape spaces that are well-planned, Vastu-aligned, and built for lasting comfort and prosperity.",
     image: "/Infra/process.jpg",
 
     steps: [
@@ -63,30 +63,30 @@ export const infraData = {
       },
       {
         id: "02",
-        prefix: "Followed by",
-        highlight: "Conceptual Vision & Layouts",
-        suffix: "to define design direction.",
+        prefix: "Concepts & Layouts are",
+        highlight: "developed to establish clarity, flow",
+        suffix: "and functional structure. ",
         color: "text-red-500",
       },
       {
         id: "03",
-        prefix: "Then comes",
-        highlight: "Design Refinement & Detailing",
-        suffix: "for precise execution.",
+        prefix: "Design is refined with detailed ",
+        highlight: "planning to ensure precision",
+        suffix: "nd practical execution.",
         color: "text-blue-500",
       },
       {
         id: "04",
-        prefix: "Next,",
-        highlight: "Production & Building Approvals",
-        suffix: "ensure smooth implementation.",
+        prefix: "All ",
+        highlight: "approvals and technical preparations ",
+        suffix: "are managed for a smooth construction process.",
         color: "text-pink-500",
       },
       {
         id: "05",
-        prefix: "Finally,",
-        highlight: "Quality Control & Field Observation",
-        suffix: "guarantee reliable outcomes.",
+        prefix: "Execution is monitored to",
+        highlight: "maintain design accuracy, quality,",
+        suffix: " and consistency. ",
         color: "text-orange-500",
       },
     ]
@@ -95,29 +95,13 @@ export const infraData = {
   projects: {
     title: "Selected Architectural Work",
     subtitle:
-      "We approach interior and exterior design with a focus on lifestyle, context, and long-term value.",
+      "A selection of projects shaped by thoughtful design and practical execution ",
 
-    images: [
-      "/Infra/select1.jpg",
-      "/Infra/select2.jpg",
-      "/Infra/select3.jpg",
-      "/Infra/select4.jpg",
-      "/Infra/select5.jpg",
-      "/Infra/select6.jpg",
-      "/Infra/select7.jpg",
-      "/Infra/select2.jpg",
-      "/Infra/select3.jpg",
-      "/Infra/select4.jpg",
-      "/Infra/select5.jpg",
-      "/Infra/select6.jpg",
-      "/Infra/select7.jpg",
-
-    ],
   },
   cta: {
     title: "Have Land or a Project in Mind?",
     subtitle: "Let’s explore what’s possible.",
-    buttonText: "Schedule Construction Consultation →",
+    buttonText: "schedule architectural consultation →",
     image: "/Infra/cta.jpg",
   },
   faqs: [
@@ -147,13 +131,13 @@ export const infraData = {
   headingTop: "WHY WORK WITH",
   headingBottom: "OUR ARCHITECTURAL TEAM",
   description:
-    "We approach interior and exterior design with a focus on lifestyle, context, and long-term value.",
+    "A team focused on delivering practical, well-planned, and execution-ready architectural Designs.",
 
   points: [
-    "Design-to-Execution Alignment",
-    "Real Estate & Construction Integration",
-    "Practical, Approval-Ready Designs",
-    "Single-Point Accountability",
+    "Design to Execution Continuity ",
+    "Integrated Real Estate & Construction ",
+    "Approval-Ready Practical Designs ",
+    "Single Point of Responsibility ",
   ],
 }
 };

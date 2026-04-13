@@ -21,8 +21,8 @@ export default function Navbar({ logo }) {
     <>
       {/* ══ NAVBAR ══ */}
       <header className="fixed top-4 md:top-5 left-0 w-full z-[100]">
-        <div className="mx-auto max-w-7xl px-s16 xl:px-0">
-          <div className="flex items-center justify-between bg-secondary-light rounded-r40 px-s16 py-s8">
+        <div className="mx-auto max-w-8xl px-s16 xl:px-s40 ">
+          <div className="flex items-center justify-between bg-secondary-light/90 backdrop-blur-lg rounded-r40 px-s16 py-s8">
             {/* LOGO */}
             <Link href="/">
               <div className="w-10 h-10 rounded-full overflow-hidden border-3 border-white bg-white flex items-center justify-center">
@@ -115,7 +115,7 @@ export default function Navbar({ logo }) {
           </div>
 
           {/* ✅ FIX: Mobile CTA — close drawer first, then open modal */}
-          <div className="mt-auto pb-s16">
+          <div className="mt-auto mb-s64">
             <Button
               onClick={() => {
                 setOpen(false);       // close drawer

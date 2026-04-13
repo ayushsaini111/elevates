@@ -43,10 +43,10 @@ export default function VirtualTourSection() {
   }, []);
 
   return (
-    <section className="pl-s32 md:pl-s64 xl:px-0 py-s160 bg-secondary-light">
+    <section className=" xl:px-0 pb-s160">
 
       {/* Heading */}
-      <div className="max-w-7xl mx-auto pr-s24">
+      <div className="max-w-7xl mx-auto text-center sm:text-left px-s32 sm:px-s40">
         <h2 className="heading-h2 text-main">
           {virtualTourSection.heading1}
         </h2>
@@ -63,9 +63,9 @@ export default function VirtualTourSection() {
         <div
           ref={scrollRef}
           className="
-            flex gap-s32 overflow-x-auto 
-            scroll-smooth hide-scrollbar
-            pl-[calc((100vw-1280px)/2+24px)]
+            flex  overflow-x-auto 
+            scroll-smooth hide-scrollbar px-s32 lg:px-s160
+           
           "
         >
           {loading
@@ -78,12 +78,12 @@ export default function VirtualTourSection() {
                   className="
                     min-w-[250px] md:min-w-[340px]
                     md:h-[600px]
-                    rounded-r32 overflow-hidden shadow-sm group
+                    rounded-r32 overflow-hidden shadow-sm group mx-[12px]
                   "
                 >
                   <video
                     src={tour.video}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="w-full  h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     autoPlay
                     muted
                     loop
@@ -94,16 +94,16 @@ export default function VirtualTourSection() {
         </div>
 
         {/* Arrows */}
-        <div className="absolute -bottom-30 right-s40 flex gap-4">
+        <div className="absolute -bottom-30 right-s40 flex gap-4 cursor-pointer">
           <button
             onClick={scrollLeft}
-            className="w-12 h-12 heading-h3 pt-1 rounded-full bg-primary-light text-white flex items-center justify-center"
+            className="w-12 h-12 heading-h3 pt-1 rounded-full bg-primary-main cursor-pointer text-white flex items-center justify-center"
           >
             ‹
           </button>
           <button
             onClick={scrollRight}
-            className="w-12 h-12 heading-h3 pt-1 rounded-full bg-primary-light text-white flex items-center justify-center"
+            className="w-12 h-12 heading-h3 pt-1 rounded-full bg-primary-main cursor-pointer text-white flex items-center justify-center"
           >
             ›
           </button>
@@ -119,7 +119,8 @@ function SkeletonVideo() {
       min-w-[250px] md:min-w-[340px]
       md:h-[600px]
       rounded-r32
-      bg-gray-200
+      mx-[12px]
+      bg-secondary-light
       animate-pulse
     " />
   );

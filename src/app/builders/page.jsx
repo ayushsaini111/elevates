@@ -15,18 +15,18 @@ export default function Page() {
   return (
     <section>
 
-    <div className="theme-builders space-y-s80 md:space-y-s160">
+    <div className="theme-builders">
       <BuilderHero />
       <Philosophy />
       <Services />
       <Projects />
       <Process />
       <Flexibility />
-    </div>
-      <CustomerFeedbackSection />
-      <FAQSection faqs={faqs} />
+      <CustomerFeedbackSection font="builder-h2" />
+      <FAQSection  font="builder-h2"faqs={faqs} />
       <CTASection />
       <Footer   image={"/Builder/footer.png"} />
+    </div>
     </section>
   );
 }

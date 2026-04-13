@@ -11,7 +11,7 @@ export default function Flexibility() {
   const [active, setActive] = useState(0);
 
   return (
-    <section className="w-full py-s80 overflow-hidden">
+    <section className="w-full pt-s80 md:py-0 overflow-hidden">
       <div className="w-full mx-auto relative">
 
         {/* 🔥 BACK TEXT */}
@@ -20,17 +20,17 @@ export default function Flexibility() {
         </h2>
 
         {/* 🔥 CENTER HEADING */}
-        <div className="flex justify-center mt-s24 mb-s80">
+        <div className="flex justify-center mb-s16 sm:mt-0">
           <h3 className="builder-h2 text-center">
             {flexibility.subHeading}
           </h3>
         </div>
 
         {/* MAIN */}
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-s40 relative z-10">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-s40 relative z-10">
 
           {/* LEFT IMAGE */}
-          <div className="hidden lg:block w-[260px] h-[600px] rounded-r-r32 overflow-hidden">
+          <div className="w-full md:w-[260px] h-[200px] md:h-[600px] rounded-tr-0 rounded-br-r32 rounded-bl-r32 md:rounded-bl-none md:rounded-r-r32 overflow-hidden">
             <Image
               src={flexibility.image}
               alt="left"
@@ -61,7 +61,7 @@ export default function Flexibility() {
                       ${
                         active === i
                           ? "text-on-primary font-medium bg-gradient-to-r from-[var(--primary-main)] to-[#88510F] hover:from-[var(--primary-main)] hover:to-[var(--primary-light)] transition-all duration-300 shadow-md hover:shadow-lg"
-                          : "bg-secondary-light text-black"
+                          : "bg-secondary-light "
                       }
                     `}
                   >
@@ -70,7 +70,7 @@ export default function Flexibility() {
 
                   {/* DESC */}
                   {active === i && (
-                    <p className="mt-s16 body-default text-secondary max-w-xs animate-fadeIn">
+                    <p className="mt-s16 px-s16 md:px-0 body-default text-secondary max-w-xs animate-fadeIn">
                       {item.desc}
                     </p>
                   )}
@@ -81,7 +81,7 @@ export default function Flexibility() {
           </div>
 
           {/* RIGHT IMAGE */}
-          <div className="hidden lg:block w-[260px] h-[600px] rounded-l-r32 overflow-hidden">
+          <div className="w-full md:w-[260px] h-[200px] md:h-[600px] rounded-br-0 rounded-tr-r32 rounded-tl-r32 md:rounded-tr-none md:rounded-l-r32 overflow-hidden">
             <Image
               src={flexibility.image}
               alt="right"

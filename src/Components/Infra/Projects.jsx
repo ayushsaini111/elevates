@@ -113,7 +113,7 @@ export default function Projects() {
   /* ── Loading skeleton ── */
   if (loading) {
     return (
-      <section className="w-full py-s80">
+      <section className="w-full py-s80 md:py-s104 xl:py-s160">
         <div className="max-w-5xl mx-auto space-y-s80 text-center px-s16 ms:px-0">
           <div className="space-y-s16 px-s8">
             <h2 className="infra-h2">{projects.title}</h2>
@@ -147,17 +147,17 @@ export default function Projects() {
   if (!loading && images.length === 0) return null;
 
   return (
-    <section className="w-full py-s80">
-      <div className="max-w-5xl mx-auto space-y-s80 text-center px-s16 ms:px-0">
+    <section className="w-full py-s80 md:py-s104 xl:py-s160">
+      <div className="max-w-5xl mx-auto space-y-s56 text-center px-s32 ms:px-0">
         {/* Heading */}
-        <div className="space-y-s16 px-s8">
-          <h2 className="infra-h2">{projects.title}</h2>
+        <div className="space-y-s8 px-s8">
+          <h2 className="infra-h2 max-w-[280px] mx-auto sm:max-w-2xl">{projects.title}</h2>
           <p className="heading-h6 max-w-lg mx-auto">{projects.subtitle}</p>
         </div>
 
         {/* MAIN IMAGE */}
         <div
-          className="relative w-full h-[260px] sm:h-[400px] lg:h-[520px] rounded-r24 md:rounded-r32 overflow-hidden shadow-xl cursor-grab active:cursor-grabbing"
+          className="relative w-full h-[400px] lg:h-[520px] rounded-r24 md:rounded-r32 overflow-hidden shadow-xl cursor-grab active:cursor-grabbing"
           onTouchStart={onTouchStart}
           onTouchEnd={onTouchEnd}
         >
@@ -175,22 +175,22 @@ export default function Projects() {
       </div>
 
       {/* DOTS */}
-      <div className="flex justify-center gap-2 mt-s56 ">
+      <div className="flex justify-center gap-3 mt-s24 ">
         {images.map((_, i) => (
           <button
             key={i}
             onClick={() => goTo(i)}
             className={`rounded-full transition-all duration-200 cursor-pointer ${
               activeIndex === i
-                ? "w-2.5 h-2.5 bg-primary-main"
-                : "w-2 h-2 bg-secondary-main opacity-90"
+                ? "w-3.5 h-3.5 bg-primary-main"
+                : "w-3 h-3 bg-secondary-light opacity-90"
             }`}
           />
         ))}
       </div>
 
       {/* THUMBNAILS */}
-      <div className="w-full mt-s16 relative">
+      <div className="w-full xl:pl-s32 relative">
         {/* Fade — left */}
         <div
           className="pointer-events-none absolute left-0 top-0 h-full w-5 z-10 transition-opacity duration-300"
@@ -219,7 +219,7 @@ export default function Projects() {
           onMouseMove={onMouseMove}
           onMouseUp={onMouseUp}
           onMouseLeave={onMouseUp}
-          className="flex gap-s16 overflow-x-auto hide-scrollbar items-end py-s32 select-none"
+          className="flex gap-s16 overflow-x-auto hide-scrollbar items-end py-s24 select-none"
           style={{
             cursor: "grab",
             paddingLeft: "max(16px, calc((100vw - 64rem) / 2))",
@@ -235,7 +235,7 @@ export default function Projects() {
                 relative flex-shrink-0
                 w-[120px] h-[90px]
                 lg:w-[140px] lg:h-[100px]
-                rounded-r16 overflow-hidden
+                rounded-r24 overflow-hidden
                 transition-all duration-300 ease-out
                 ${
                   activeIndex === i
