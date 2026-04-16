@@ -15,13 +15,12 @@ export default function CTASection() {
       <div className="relative  mx-auto rounded-r32 overflow-hidden">
 
         {/* 🔥 BACKGROUND IMAGE */}
-        <div className="relative w-full h-screen ">
+        <div className="relative w-full min-h-screen ">
           <Image
             src={cta.image}
             alt={cta.alt}
             fill
-            priority
-            className="object-cover "
+            priority className="object-cover lg:object-[center_65%]"
           />
         </div>
 

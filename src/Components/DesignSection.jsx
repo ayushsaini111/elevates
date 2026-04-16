@@ -25,14 +25,14 @@ export default function DesignSection() {
 
         {/* Content */}
         <div className="max-w-xl">
-          
-            <div>
-      <p className="text-left text-primary-main pl-s8">Architecture Designing</p>
-          <h2 className="heading-h2 text-main mb-s16">
-            {designSection.heading}
-          </h2>
 
-    </div>
+          <div>
+            <p className="text-left text-primary-main pl-s8">Architecture Designing</p>
+            <h2 className="heading-h2 text-main mb-s16">
+              {designSection.heading}
+            </h2>
+
+          </div>
 
           <p className="body-default text-secondary">
             {designSection.description1}
@@ -41,7 +41,7 @@ export default function DesignSection() {
             {designSection.description2}
           </p>
 
-          <Button variant="secondary"  as="link" href={"/infra"}>
+          <Button variant="secondary" as="link" href={"/infra"}>
             {designSection.buttonText}
           </Button>
         </div>
@@ -83,15 +83,15 @@ export default function DesignSection() {
         </div>
 
         {/* Center Content */}
-        <div className="relative z-10 h-full flex flex-col items-center justify-center text-center max-w-2xl mx-auto px-s24">
+        <div className="relative z-10 h-full flex flex-col items-center justify-center text-center max-w-lg mx-auto px-s24">
 
-    <div>
-      <p className="absolute text-left text-primary-main left-30 top-62">Architecture Designing</p>
-          <h2 className="heading-h2 text-main mb-s24">
-            {designSection.heading}
-          </h2>
+          <div>
+            <p className=" text-left text-primary-main pl-s16">Architecture Designing</p>
+            <h2 className="heading-h2 text-main mb-s24">
+              {designSection.heading}
+            </h2>
 
-    </div>
+          </div>
           <p className="body-default text-secondary/80">
             {designSection.description1}
           </p>
@@ -99,7 +99,7 @@ export default function DesignSection() {
             {designSection.description2}
           </p>
 
-          <Button  as="link" href={"/infra"}variant="secondary">
+          <Button as="link" href={"/infra"} variant="secondary">
             {designSection.buttonText}
           </Button>
 

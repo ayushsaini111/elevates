@@ -13,7 +13,7 @@ export const infraData = {
     tagline:
       "Architecture is not just for aesthetics — it’s built to live, last, and stay timeless.",
     heading:
-      "We approach architecture with a balance of aesthetics, practicality, and long-term",
+      "We approach architecture with a balance of aesthetics, practicality, and long-term usability.",
   },
   expertise: {
     title: "Our Architectural Expertise",

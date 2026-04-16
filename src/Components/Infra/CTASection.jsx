@@ -19,7 +19,7 @@ export default function CTASection() {
           alt="cta"
           fill
           priority
-          className="object-cover"
+          className="object-cover lg:object-[center_60%]"
         />
         
     
