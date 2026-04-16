@@ -31,19 +31,19 @@ export const infraData = {
         title: "Commercial & Mixed-Use Developments",
         description:
           "Spaces designed for business performance, customer experience, and long-term value. Shops • Office Spaces • Showrooms • Mixed-Use Buildings ",
-        image: "/Infra/1.jpg",
+        image: "/Infra/2.jpg",
       },
       {
         title: " Master Planning & Layout Design",
         description:
           "Strategic planning that organizes land, movement, and infrastructure for scalable development. Townships • Plot Layouts • Land Development • Site Planning ",
-        image: "/Images/home4.jpg",
+        image: "/Infra/1.jpg",
       },
       {
         title: "Independent Homes & Villas",
         description:
           "Personalized homes designed around lifestyle, comfort, and timeless living. Independent Houses • Villas • Farmhouses • Custom Homes ",
-        image: "/Images/home4.jpg",
+        image: "/Infra/2.jpg",
       },
     ],
   },
